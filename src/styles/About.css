@@ -1,0 +1,21 @@
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .about-content p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
