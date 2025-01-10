@@ -27,6 +27,7 @@ const Skills = ({ videoRef, synchronizeVideos }) => {
         autoPlay
         loop
         muted
+        playsInline
       >
         <source src={require("../assets/skills-background.mp4")} type="video/mp4" />
         Your browser does not support the video tag.
