@@ -6,7 +6,6 @@ const HeroSection = () => {
   const [isTyping, setIsTyping] = useState(true); // Whether typing or deleting
   const [currentTextIndex, setCurrentTextIndex] = useState(0); // Index of current text
   const fullTexts = useRef(["Hello!", "Hoy!", "Hi!"]); // List of texts to alternate
-  const secondText = useRef(["I'm Paul", "I'm Gengo", "And this is my portfolio"])
   const typingSpeed = 150; // Speed of typing in ms
   const deletingSpeed = 100; // Speed of deleting in ms
   const pauseTime = 2000; // Pause before switching text
@@ -53,9 +52,8 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1>
           <span className="typing-effect">{displayedText}</span>
-          <span className="typing-effect">{displayedText}</span>
         </h1>
-        <p>Explore my world of creativity and innovation.</p>
+        <p>Welcome to Gengo-bit's portfolio!</p>
       </div>
     </section>
   );

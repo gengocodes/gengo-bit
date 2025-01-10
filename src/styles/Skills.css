@@ -28,8 +28,8 @@
 }
 
 .skills-content h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2rem; /* Reduced font size for smaller screens */
+  margin-bottom: 10px;
   animation: fadeInUp 1.5s ease-in-out;
 }
 
@@ -43,13 +43,24 @@
 }
 
 .skills-content li {
-  background-color: #007bff;
-  color: white;
-  padding: 0.5rem 1rem;
+  background-color: rgba(228, 230, 231, 0.7); /* Light transparent background to blend with the video */
+  color: gray;
+  padding: 0.4rem 0.8rem; /* Smaller padding */
   border-radius: 20px;
-  font-size: 1rem;
+  font-size: 0.9rem; /* Smaller font size */
+  backdrop-filter: blur(5px); /* Add blur effect to simulate the video background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for better visibility */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
 }
 
+/* Hover effects */
+.skills-content li:hover {
+  transform: scale(1.05); /* Slightly scale up the element on hover */
+  background-color: rgba(228, 230, 231, 1); /* Darken the background color on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Animation for fading in */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -58,5 +69,44 @@
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness: Making everything smaller and more compact */
+@media (max-width: 768px) {
+  .skills-content h2 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+    margin-bottom: 15px; /* Adjusted margin */
+  }
+
+  .skills-content ul {
+    flex-direction: row; /* Keep items in a row */
+    gap: 0.8rem; /* Reduced gap for mobile */
+  }
+
+  .skills-content li {
+    width: 40%; /* Make the items smaller */
+    font-size: 0.85rem; /* Slightly smaller font for mobile */
+    padding: 0.4rem 0.7rem; /* Smaller padding */
+    text-align: center; /* Center the text */
+  }
+}
+
+/* Extra small devices: Additional compact styling */
+@media (max-width: 480px) {
+  .skills-content h2 {
+    font-size: 1.2rem; /* Even smaller heading for very small screens */
+    margin-bottom: 10px;
+  }
+
+  .skills-content ul {
+    flex-direction: column; /* Stack items vertically */
+    gap: 0.5rem; /* Even smaller gap for vertical stacking */
+  }
+
+  .skills-content li {
+    width: 80%; /* Use more width for each item */
+    font-size: 0.8rem; /* Smaller font size */
+    padding: 0.4rem 0.6rem; /* Adjust padding */
   }
 }
