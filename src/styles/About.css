@@ -20,7 +20,7 @@
 .about-content {
   position: relative;
   z-index: 1;
-  color: white;
+  color: gray;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);

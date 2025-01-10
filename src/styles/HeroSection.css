@@ -20,7 +20,7 @@
 .hero-content {
   position: relative;
   z-index: 1;
-  color: white;
+  color: gray;
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
@@ -50,7 +50,7 @@
 }
 
 .typing-effect {
-  border-right: 2px solid white; /* Simulates a typing cursor */
+  border-right: 2px solid gray; /* Simulates a typing cursor */
   animation: blinkCursor 0.7s steps(1) infinite;
 }
 

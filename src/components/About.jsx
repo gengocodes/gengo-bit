@@ -1,26 +1,33 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "../styles/About.css";
 
-const About = () => {
+const About = ({ videoRef, synchronizeVideos }) => {
   useEffect(() => {
-    const handleScroll = () => {
-      const aboutSection = document.querySelector(".about-section");
-      const videoElement = aboutSection.querySelector(".background-video");
-
-      if (videoElement) {
-        const parallaxFactor = 0.2; // Adjust for parallax intensity
-        const offset = (window.scrollY - aboutSection.offsetTop) * parallaxFactor;
-        videoElement.style.transform = `translateY(${offset}px)`;
-      }
+    const videoElement = videoRef.current; // store current ref in a local variable
+    const onPlay = () => {
+      if (videoElement) synchronizeVideos(videoElement.currentTime);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    if (videoElement) {
+      videoElement.addEventListener("play", onPlay);
+    }
+
+    return () => {
+      if (videoElement) {
+        videoElement.removeEventListener("play", onPlay);
+      }
+    };
+  }, [videoRef, synchronizeVideos]);
 
   return (
     <section className="about-section">
-      <video className="background-video" autoPlay loop muted>
+      <video
+        ref={videoRef}
+        className="background-video"
+        autoPlay
+        loop
+        muted
+      >
         <source src={require("../assets/about-background.mp4")} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
