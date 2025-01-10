@@ -1,37 +1,59 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/HeroSection.css";
 
-
 const HeroSection = () => {
+  const [displayedText, setDisplayedText] = useState(""); // Text being displayed
+  const [isTyping, setIsTyping] = useState(true); // Whether typing or deleting
+  const [currentTextIndex, setCurrentTextIndex] = useState(0); // Index of current text
+  const fullTexts = useRef(["Website", "Gengo-site"]); // List of texts to alternate
+  const typingSpeed = 150; // Speed of typing in ms
+  const deletingSpeed = 100; // Speed of deleting in ms
+  const pauseTime = 2000; // Pause before switching text
+
   useEffect(() => {
-    let ticking = false;
+    let timeout;
 
-    const parallaxEffect = () => {
-      const background = document.querySelector(".parallax-background");
-      const scrollPosition = window.pageYOffset;
+    const typeAndDelete = () => {
+      const currentFullText = fullTexts.current[currentTextIndex];
 
-      if (background && !ticking) {
-        window.requestAnimationFrame(() => {
-          background.style.transform = `translateY(${scrollPosition * 0.5}px)`;
-          ticking = false;
-        });
-        ticking = true;
+      if (isTyping) {
+        // Typing effect
+        if (displayedText.length < currentFullText.length) {
+          setDisplayedText(currentFullText.slice(0, displayedText.length + 1));
+          timeout = setTimeout(typeAndDelete, typingSpeed);
+        } else {
+          setIsTyping(false); // Switch to deleting after typing finishes
+          timeout = setTimeout(typeAndDelete, pauseTime);
+        }
+      } else {
+        // Deleting effect
+        if (displayedText.length > 0) {
+          setDisplayedText(currentFullText.slice(0, displayedText.length - 1));
+          timeout = setTimeout(typeAndDelete, deletingSpeed);
+        } else {
+          setIsTyping(true); // Switch to typing the next text
+          setCurrentTextIndex((prevIndex) => (prevIndex + 1) % fullTexts.current.length);
+          timeout = setTimeout(typeAndDelete, typingSpeed);
+        }
       }
     };
 
-    window.addEventListener("scroll", parallaxEffect);
+    timeout = setTimeout(typeAndDelete, typingSpeed);
 
-    return () => {
-      window.removeEventListener("scroll", parallaxEffect);
-    };
-  }, []);
+    return () => clearTimeout(timeout); // Cleanup timeout on unmount
+  }, [displayedText, isTyping, currentTextIndex]); // Dependencies to trigger effect
 
   return (
     <section className="hero-section">
-      <div className="parallax-background"></div>
+      <video className="background-video" autoPlay loop muted>
+        <source src={require("../assets/hero-background.mp4")} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="hero-content">
-        <h1>Welcome to Gengo-site</h1>
-        <p>Here contains all of my professional projects</p>
+        <h1>
+          Welcome to My <span className="typing-effect">{displayedText}</span>
+        </h1>
+        <p>Explore my world of creativity and innovation.</p>
       </div>
     </section>
   );

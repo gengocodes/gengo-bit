@@ -1,12 +1,18 @@
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  .footer p {
-    font-size: 0.9rem;
-    margin: 0;
-  }
-  
+  background-color: #1d1d1d;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer p:hover {
+  opacity: 1;
+}
