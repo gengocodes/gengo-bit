@@ -35,8 +35,8 @@ const About = ({ videoRef, synchronizeVideos }) => {
       <div className="about-content">
         <h2>About Me</h2>
         <p>
-          I'm passionate about technology, design, and crafting solutions that
-          make a difference. Let me share my journey with you.
+          I'm passionate about technology, design, and integrating hardware 
+          and software solutions to solve real-world problems.
         </p>
       </div>
     </section>
