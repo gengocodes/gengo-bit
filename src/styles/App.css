@@ -16,12 +16,20 @@ section {
 }
 
 header {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 1rem;
+  background: linear-gradient(135deg, #f4f4f4, #e0e0e0); /* Soft gradient from white to light gray */
+  color: #333; /* Dark text for contrast */
+  padding: 1rem 2rem; /* Add more padding for a spacious look */
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header .logo {
+  font-size: 2rem; /* Larger, more prominent logo text */
+  font-weight: bold;
+  color: #333; /* Dark text for better contrast */
+  letter-spacing: 1px; /* Slight letter-spacing for a modern look */
 }
 
 header nav ul {
@@ -33,15 +41,18 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 1rem;
+  margin: 0 1.5rem; /* Increase space between navigation items */
 }
 
 header nav ul li a {
-  color: white;
+  color: #333; /* Dark text for links */
   text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger text for readability */
+  font-weight: 500; /* Medium weight for a sleek look */
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #f4c542;
+  color: #f4c542; /* Highlight color for better user interaction */
+  text-decoration: underline; /* Add underline for a more interactive feel */
 }

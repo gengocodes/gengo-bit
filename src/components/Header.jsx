@@ -3,9 +3,9 @@ import "../styles/Header.css";
 
 const Header = () => {
   return (
-    <header>
+    <header className="header">
       <nav>
-        <ul>
+        <ul className="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
