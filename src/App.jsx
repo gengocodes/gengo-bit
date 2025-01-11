@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef} from "react";
 import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -21,12 +21,6 @@ function App() {
     if (aboutVideoRef.current) aboutVideoRef.current.currentTime = currentTime;
     if (skillsVideoRef.current) skillsVideoRef.current.currentTime = currentTime;
     if (projectsVideoRef.current) projectsVideoRef.current.currentTime = currentTime;
-  };
-
-  const handleScrollTo = (ref) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../styles/Header.css'; // Ensure you import the styles
+import '../styles/Header.css';
 
 function Header({
   heroSectionRef,
@@ -8,6 +8,7 @@ function Header({
   projectsSectionRef,
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Handle scroll event to modify header styles
   useEffect(() => {
@@ -33,9 +34,31 @@ function Header({
     }
   };
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className={isScrolled ? "scrolled" : ""}>
-      <nav>
+      <div className="logo">[Logo]</div>
+      {/* Only show hamburger menu on mobile */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+      {/* Side Panel */}
+      <div className={`side-panel ${isMenuOpen ? 'open' : ''}`}>
+        <button className="close-btn" onClick={toggleMenu}>&times;</button>
+        <ul className="side-panel-links">
+          <li><a href="#hero" onClick={() => handleScrollTo(heroSectionRef)}>Home</a></li>
+          <li><a href="#about" onClick={() => handleScrollTo(aboutSectionRef)}>About</a></li>
+          <li><a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>Skills</a></li>
+          <li><a href="#projects" onClick={() => handleScrollTo(projectsSectionRef)}>Projects</a></li>
+        </ul>
+      </div>
+      {/* Desktop Navigation (visible on wide screens) */}
+      <nav className="desktop-nav">
         <ul>
           <li><a href="#hero" onClick={() => handleScrollTo(heroSectionRef)}>Home</a></li>
           <li><a href="#about" onClick={() => handleScrollTo(aboutSectionRef)}>About</a></li>
