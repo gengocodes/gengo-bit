@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import '../styles/Header.css';
+import Logo from '../assets/Logo.png'; // Import the logo image
 
 function Header({
   heroSectionRef,
@@ -40,7 +41,9 @@ function Header({
 
   return (
     <header className={isScrolled ? "scrolled" : ""}>
-      <div className="logo">[Logo]</div>
+      <div className="logo">
+        <img src={Logo} alt="Gengo-bit Logo" /> {/* Display the Logo image */}
+      </div>
       {/* Only show hamburger menu on mobile */}
       <div className="hamburger" onClick={toggleMenu}>
         <span className="bar"></span>

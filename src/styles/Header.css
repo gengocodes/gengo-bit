@@ -28,7 +28,16 @@ header .logo {
   color: #333;
   letter-spacing: 1px;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
+
+header .logo img {
+  max-width: 22px; /* Limit the max width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any unnecessary space below the image */
+}
+
 
 /* Hide default navigation links for mobile */
 header nav ul {
