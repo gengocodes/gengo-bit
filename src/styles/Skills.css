@@ -95,8 +95,8 @@
 /* Extra small devices: Additional compact styling */
 @media (max-width: 480px) {
   .skills-content h2 {
-    font-size: 1.4rem; /* Even smaller heading */
-    margin-bottom: 5px; /* Further reduced margin */
+    font-size: 1.2rem; /* Even smaller heading */
+    margin-bottom: 6px; /* Further reduced margin */
   }
 
   .skills-content ul {
