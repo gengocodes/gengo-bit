@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Header from "./components/Header"; // Import Header component
 
 function App() {
   const heroSectionRef = useRef(null);
@@ -30,17 +31,12 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#hero" onClick={() => handleScrollTo(heroSectionRef)}>Home</a></li>
-            <li><a href="#about" onClick={() => handleScrollTo(aboutSectionRef)}>About</a></li>
-            <li><a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>Skills</a></li>
-            <li><a href="#projects" onClick={() => handleScrollTo(projectsSectionRef)}>Projects</a></li>
-          </ul>
-        </nav>
-      </header>
-
+      <Header
+        heroSectionRef={heroSectionRef}
+        aboutSectionRef={aboutSectionRef}
+        skillsSectionRef={skillsSectionRef}
+        projectsSectionRef={projectsSectionRef}
+      />
       <section ref={heroSectionRef} id="hero">
         <HeroSection
           videoRef={heroVideoRef}
