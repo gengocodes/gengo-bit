@@ -3,6 +3,8 @@ body {
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrollbars */
   background-color: black; /* Fallback background */
+  font-family: 'Poppins', sans-serif; /* Default font for body */
+  color: #333; /* Text color for the body */
 }
 
 html {
@@ -23,6 +25,8 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  opacity: 90%;
+  transition: background-color 0.3s ease; /* Smooth transition for opacity change */
 }
 
 header .logo {
@@ -30,6 +34,7 @@ header .logo {
   font-weight: bold;
   color: #333; /* Dark text for better contrast */
   letter-spacing: 1px; /* Slight letter-spacing for a modern look */
+  margin-right: auto; /* Align the logo to the left */
 }
 
 header nav ul {
@@ -41,18 +46,42 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 1.5rem; /* Increase space between navigation items */
+  margin: 0 1rem; /* Increase space between navigation items */
 }
 
 header nav ul li a {
   color: #333; /* Dark text for links */
   text-decoration: none;
-  font-size: 1.1rem; /* Slightly larger text for readability */
-  font-weight: 500; /* Medium weight for a sleek look */
+  font-size: 1rem; /* Slightly smaller text for readability */
+  font-weight: 400; /* Regular weight for a sleeker look */
   transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
   color: #f4c542; /* Highlight color for better user interaction */
-  text-decoration: underline; /* Add underline for a more interactive feel */
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 0.75rem 1rem; /* Adjust padding for mobile */
+  }
+
+  header .logo {
+    font-size: 1.5rem; /* Smaller logo on mobile */
+  }
+
+  header nav ul {
+    flex-direction: row; /* Keep navigation items in a row */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    justify-content: center; /* Center navigation items */
+  }
+
+  header nav ul li {
+    margin: 0.5rem 1rem; /* Smaller spacing between items */
+  }
+
+  header nav ul li a {
+    font-size: 0.9rem; /* Smaller font size for better space utilization */
+  }
 }

@@ -28,7 +28,7 @@
 }
 
 .skills-content h2 {
-  font-size: 2rem; /* Reduced font size for smaller screens */
+  font-size: 2rem; /* Adjust font size for larger screens */
   margin-bottom: 10px;
   animation: fadeInUp 1.5s ease-in-out;
 }
@@ -75,19 +75,19 @@
 /* Mobile responsiveness: Making everything smaller and more compact */
 @media (max-width: 768px) {
   .skills-content h2 {
-    font-size: 1.5rem; /* Smaller heading on mobile */
-    margin-bottom: 15px; /* Adjusted margin */
+    font-size: 1.4rem; /* Smaller heading */
+    margin-bottom: 5px; /* Reduced margin */
   }
 
   .skills-content ul {
     flex-direction: row; /* Keep items in a row */
-    gap: 0.8rem; /* Reduced gap for mobile */
+    gap: 0.2rem; /* Reduced gap further */
   }
 
   .skills-content li {
-    width: 40%; /* Make the items smaller */
-    font-size: 0.85rem; /* Slightly smaller font for mobile */
-    padding: 0.4rem 0.7rem; /* Smaller padding */
+    width: 35%; /* Reduced width for each item */
+    font-size: 0.7rem; /* Much smaller font size */
+    padding: 0.2rem 0.5rem; /* Reduced padding */
     text-align: center; /* Center the text */
   }
 }
@@ -95,18 +95,18 @@
 /* Extra small devices: Additional compact styling */
 @media (max-width: 480px) {
   .skills-content h2 {
-    font-size: 1.2rem; /* Even smaller heading for very small screens */
-    margin-bottom: 10px;
+    font-size: 1.2rem; /* Even smaller heading */
+    margin-bottom: 5px; /* Further reduced margin */
   }
 
   .skills-content ul {
     flex-direction: column; /* Stack items vertically */
-    gap: 0.5rem; /* Even smaller gap for vertical stacking */
+    gap: 0.2rem; /* Even smaller gap for vertical stacking */
   }
 
   .skills-content li {
-    width: 80%; /* Use more width for each item */
-    font-size: 0.8rem; /* Smaller font size */
-    padding: 0.4rem 0.6rem; /* Adjust padding */
+    width: 80%; /* Larger width for each item */
+    font-size: 0.6rem; /* Significantly smaller font size */
+    padding: 0.2rem 0.4rem; /* Reduced padding */
   }
 }
