@@ -95,18 +95,18 @@
 /* Extra small devices: Additional compact styling */
 @media (max-width: 480px) {
   .skills-content h2 {
-    font-size: 1.2rem; /* Even smaller heading */
+    font-size: 1.4rem; /* Even smaller heading */
     margin-bottom: 5px; /* Further reduced margin */
   }
 
   .skills-content ul {
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: row; /* Stack items vertically */
     gap: 0.2rem; /* Even smaller gap for vertical stacking */
   }
 
   .skills-content li {
-    width: 80%; /* Larger width for each item */
-    font-size: 0.3rem; /* Significantly smaller font size */
+    width: 35%; /* Larger width for each item */
+    font-size: 0.4rem; /* Significantly smaller font size */
     padding: 0.2rem 0.2rem; /* Reduced padding */
     text-align: center; /* Center the text */
   }
