@@ -108,5 +108,6 @@
     width: 80%; /* Larger width for each item */
     font-size: 0.3rem; /* Significantly smaller font size */
     padding: 0.2rem 0.2rem; /* Reduced padding */
+    text-align: center; /* Center the text */
   }
 }
