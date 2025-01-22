@@ -53,7 +53,7 @@ const HeroSection = () => {
         <h1>
           <span className="typing-effect">{displayedText}</span>
         </h1>
-        <p>Welcome to Gengo-bit's portfolio!</p>
+        <p>This is still a work in progress.</p>
       </div>
     </section>
   );
