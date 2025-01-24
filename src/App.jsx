@@ -3,25 +3,13 @@ import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import Header from "./components/Header"; 
+import Header from "./components/Header";
 
 function App() {
   const heroSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
   const skillsSectionRef = useRef(null);
-  const projectsSectionRef = useRef(null); 
-
-  const heroVideoRef = useRef(null);
-  const aboutVideoRef = useRef(null);
-  const skillsVideoRef = useRef(null);
-  const projectsVideoRef = useRef(null);
-
-  const synchronizeVideos = (currentTime) => {
-    if (heroVideoRef.current) heroVideoRef.current.currentTime = currentTime;
-    if (aboutVideoRef.current) aboutVideoRef.current.currentTime = currentTime;
-    if (skillsVideoRef.current) skillsVideoRef.current.currentTime = currentTime;
-    if (projectsVideoRef.current) projectsVideoRef.current.currentTime = currentTime;
-  };
+  const projectsSectionRef = useRef(null);
 
   return (
     <div className="App">
@@ -32,31 +20,19 @@ function App() {
         projectsSectionRef={projectsSectionRef}
       />
       <section ref={heroSectionRef} id="hero">
-        <HeroSection
-          videoRef={heroVideoRef}
-          synchronizeVideos={synchronizeVideos}
-        />
+        <HeroSection />
       </section>
 
       <section ref={aboutSectionRef} id="about">
-        <About
-          videoRef={aboutVideoRef}
-          synchronizeVideos={synchronizeVideos}
-        />
+        <About />
       </section>
 
       <section ref={skillsSectionRef} id="skills">
-        <Skills
-          videoRef={skillsVideoRef}
-          synchronizeVideos={synchronizeVideos}
-        />
+        <Skills />
       </section>
 
       <section ref={projectsSectionRef} id="projects">
-        <Projects
-          videoRef={projectsVideoRef}
-          synchronizeVideos={synchronizeVideos}
-        />
+        <Projects />
       </section>
     </div>
   );

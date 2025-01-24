@@ -1,23 +1,6 @@
-import { useEffect } from "react";
 import "../styles/About.css";
 
-const About = ({ videoRef, synchronizeVideos }) => {
-  useEffect(() => {
-    const videoElement = videoRef.current; // store current ref in a local variable
-    const onPlay = () => {
-      if (videoElement) synchronizeVideos(videoElement.currentTime);
-    };
-
-    if (videoElement) {
-      videoElement.addEventListener("play", onPlay);
-    }
-
-    return () => {
-      if (videoElement) {
-        videoElement.removeEventListener("play", onPlay);
-      }
-    };
-  }, [videoRef, synchronizeVideos]);
+const About = ({ videoRef }) => {
 
   return (
     <section className="about-section">
