@@ -1,24 +1,7 @@
-import { useEffect } from "react";
 import "../styles/Skills.css";
 
 const Skills = ({ videoRef, synchronizeVideos }) => {
-  useEffect(() => {
-    const videoElement = videoRef.current; // store current ref in a local variable
-    const onPlay = () => {
-      if (videoElement) synchronizeVideos(videoElement.currentTime);
-    };
-
-    if (videoElement) {
-      videoElement.addEventListener("play", onPlay);
-    }
-
-    return () => {
-      if (videoElement) {
-        videoElement.removeEventListener("play", onPlay);
-      }
-    };
-  }, [videoRef, synchronizeVideos]);
-
+  
   return (
     <section id="skills" className="skills-section">
       <video
