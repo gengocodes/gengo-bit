@@ -318,13 +318,12 @@ button:hover{
         font-size: 1em !important;
     }
     .carousel .list .item .buttons {
-        grid-template-columns: 1fr; /* Only one column, stacking buttons vertically */
-        grid-template-rows: auto;  /* Allowing rows to grow naturally */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
         width: 40%;
     }
-    
     .secondButton {
-        margin-top: 10px; /* Adds space between the buttons */
+        margin-top: 10px;
     }
 }
    
@@ -333,9 +332,23 @@ button:hover{
         padding-right: 0;
     }
     .carousel .list .item .content .title{
-        font-size: 30px !important;
+        font-size: 30px;
     }
     .carousel .list .item .topic {
         font-size: 2em;
+    }
+    .longtopic{
+        font-size: 2em !important;
+    }
+    .des {
+        font-size: 1em !important;
+    }
+    .carousel .list .item .buttons {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        width: 40%;
+    }
+    .secondButton {
+        margin-top: 10px;
     }
 }
