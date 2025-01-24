@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.background-video {
+.background {
   position: absolute;
   top: 0;
   left: 0;
@@ -58,4 +58,22 @@
   50% {
     border-color: transparent;
   }
+}
+
+@media (max-width: 768px) {
+ .hero-content h1{
+  font-size: 3rem;
+ }
+ .hero-content p{
+  font-size: 1rem;
+ }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1{
+    font-size: 3rem;
+   }
+   .hero-content p{
+    font-size: 1rem;
+   }
 }

@@ -34,6 +34,7 @@ function App() {
       <section ref={projectsSectionRef} id="projects">
         <Projects />
       </section>
+
     </div>
   );
 }

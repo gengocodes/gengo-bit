@@ -1,6 +1,7 @@
+import React from 'react'
 import "../styles/Skills.css";
 
-const Skills = ({ videoRef, synchronizeVideos }) => {
+const Skills = ({ videoRef }) => {
   
   return (
     <section id="skills" className="skills-section">

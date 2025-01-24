@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/HeroSection.css";
+// import paulPic from "../assets/paul-pic.png";
 
 const HeroSection = () => {
   const [displayedText, setDisplayedText] = useState(""); // Text being displayed
@@ -11,7 +12,7 @@ const HeroSection = () => {
   const pauseTime = 2000; // Pause before switching text
 
   useEffect(() => {
-    
+
     let timeout;
 
     const typeAndDelete = () => {
@@ -46,11 +47,19 @@ const HeroSection = () => {
 
   return (
     <section className="hero-section">
-      <video className="background-video" autoPlay loop muted playsInline>
-        <source src={require("../assets/hero-background.mp4")} type="video/mp4" />
+      <video
+        className="background"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={require("../assets/skills-background.mp4")} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+        </video>
+      {/* <img className="background" src={require("../assets/hero-background.jpg")} alt="" /> */}
       <div className="hero-content">
+        {/* <img src={paulPic} alt="" /> */}
         <h1>
           Welcome to my 
           <span className="typing-effect"> {displayedText}</span>
