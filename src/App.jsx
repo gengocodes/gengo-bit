@@ -25,7 +25,7 @@ function App() {
 
       <section ref={aboutSectionRef} id="about">
         <About />
-      </section>p
+      </section>
 
       <section ref={skillsSectionRef} id="skills">
         <Skills />
