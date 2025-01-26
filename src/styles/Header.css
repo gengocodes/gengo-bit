@@ -1,8 +1,8 @@
 /* Initial styles for the header */
 header {
-  background: white; /* Default background color */
+  background-color: #fff;
   color: #333;
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
   position: static;
   top: 0;
   z-index: 1000;
@@ -12,13 +12,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* Header scrolled effect */
-header.scrolled {
-  background-color: #fff; /* This ensures the header has a white background when scrolled */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Keep the shadow when scrolled */
-  opacity: .95; /* You can reduce opacity a bit to make it more subtle */
 }
 
 /* Logo styles */
@@ -100,7 +93,8 @@ header nav ul {
   flex-direction: column;
   justify-content: center;
   transition: right 0.3s ease-in-out;
-  box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.1); /* Add a shadow to match header style */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 99999;
 }
 
 .side-panel.open {
@@ -166,7 +160,7 @@ header nav ul {
 }
 @media (max-width: 480px) {
   header {
-    padding: 0.75rem 1rem;
+    padding: 2rem 2rem;
   }
 
   header .logo {
