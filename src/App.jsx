@@ -25,13 +25,15 @@ function App() {
 
       <section ref={aboutSectionRef} id="about">
         <About />
-      </section>
+      </section>p
 
       <section ref={skillsSectionRef} id="skills">
         <Skills />
       </section>
 
       <section ref={projectsSectionRef} id="projects">
+        <div className="line"></div>
+        {/* <p className="credits">Test</p> */}
         <Projects />
       </section>
 

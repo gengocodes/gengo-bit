@@ -16,5 +16,12 @@ section {
   width: 100%;
   overflow: hidden; /* Ensure sections don't overlap incorrectly */
 }
+.credits{
+  font-size: 100px;
 
+}
+.line{
+  margin-top: 50px;
+  z-index: 0;
+}
 /* Global styles for the application remain unchanged */

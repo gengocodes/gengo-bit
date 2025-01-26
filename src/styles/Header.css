@@ -3,7 +3,8 @@ header {
   background: white; /* Default background color */
   color: #333;
   padding: 1rem 2rem;
-  position: sticky;
+  position: absolute;
+  width: 96vw;
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -142,10 +143,32 @@ header nav ul {
   cursor: pointer;
 }
 
-/* Mobile view adjustments */
 @media (max-width: 768px) {
   header {
     padding: 0.75rem 1rem;
+    width: 92vw;
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+  }
+
+  .desktop-nav {
+    display: none; /* Hide the desktop navigation on mobile */
+  }
+
+  .hamburger {
+    display: flex; /* Show the hamburger icon on mobile */
+  }
+
+  header .logo {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    padding: 0.75rem 1rem;
+    width: 92vw;
   }
 
   header .logo {

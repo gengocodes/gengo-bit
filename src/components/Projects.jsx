@@ -238,7 +238,7 @@ const Projects = () => {
             <button id="next">&gt;</button>
         </div>
         <div className="time"></div>
-    </div>
+</div>
   )
 }
 
