@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import '../styles/Welcome.css';
-import TEMPpic from '../assets/welcome/TEMPpic.jpeg';
 
 function Welcome() {
     const [displayedText, setDisplayedText] = useState(""); // Text being displayed
     const [isTyping, setIsTyping] = useState(true); // Whether typing or deleting
     const [currentTextIndex, setCurrentTextIndex] = useState(0); // Index of current text
-    const fullTexts = useRef(["Computer Enginner", "Full Stack Developer", "Software Engineer"]); // List of texts to alternate
+    const fullTexts = useRef(["Hi!", "Hola!", "Bonjour!", "Hallo!", "Ciao!", "Olá!", "Konnichiwa!", "Nǐ hǎo!", "Namaste!"]); // List of texts to alternate
     const typingSpeed = 150; // Speed of typing in ms
     const deletingSpeed = 100; // Speed of deleting in ms
     const pauseTime = 2000; // Pause before switching text
@@ -49,13 +48,8 @@ function Welcome() {
     <div className="main shapedividers_com-2104">
       <div className="sec">
         <div className="container">
-          <h2 className="greet">Hello! I'm</h2>
-            <h1 className="name">Paul Corsino</h1>
+          <span className="typing-effect"> {displayedText}</span>
         </div>
-                <div className="imgcontainer"> 
-                    <img src={TEMPpic} className="img" alt=""/>
-                </div>
-                
       </div>
     </div>
   )

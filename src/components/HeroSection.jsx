@@ -46,20 +46,9 @@ const HeroSection = () => {
   }, [displayedText, isTyping, currentTextIndex]); // Dependencies to trigger effect
 
   return (
+    <div className="shapedividers_com-2105">
     <section className="hero-section">
-      <video
-        className="background"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src={require("../assets/skills-background.mp4")} type="video/mp4" />
-        Your browser does not support the video tag.
-        </video>
-      {/* <img className="background" src={require("../assets/hero-background.jpg")} alt="" /> */}
       <div className="hero-content">
-        {/* <img src={paulPic} alt="" /> */}
         <h1>
           Welcome to my 
           <span className="typing-effect"> {displayedText}</span>
@@ -67,6 +56,7 @@ const HeroSection = () => {
         <p>This is still a work in progress.</p>
       </div>
     </section>
+    </div>
   );
 };
 

@@ -34,9 +34,12 @@ section {
 }
 
 
+#welcome2{
+  background: black;
+}
 
 #hero {
-  background: black; /* Bright blue for the hero section */
+  background: white; /* Bright blue for the hero section */
 }
 
 #about {
