@@ -7,6 +7,7 @@ function Header({
   aboutSectionRef,
   skillsSectionRef,
   projectsSectionRef,
+  contactSectionRef
 }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,6 +56,7 @@ function Header({
         <button className="close-btn" onClick={toggleMenu}>&times;</button>
         <ul className="side-panel-links">
           <li><a href="#hero" onClick={() => handleScrollTo(heroSectionRef)}>Home</a></li>
+          <li><a href="#contact" onClick={() => handleScrollTo(contactSectionRef)}>Contact</a></li>
           <li><a href="#about" onClick={() => handleScrollTo(aboutSectionRef)}>About</a></li>
           <li><a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>Skills</a></li>
           <li><a href="#projects" onClick={() => handleScrollTo(projectsSectionRef)}>Projects</a></li>
@@ -64,6 +66,7 @@ function Header({
       <nav className="desktop-nav">
         <ul>
           <li><a href="#hero" onClick={() => handleScrollTo(heroSectionRef)}>Home</a></li>
+          <li><a href="#contact" onClick={() => handleScrollTo(contactSectionRef)}>Contact</a></li>
           <li><a href="#about" onClick={() => handleScrollTo(aboutSectionRef)}>About</a></li>
           <li><a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>Skills</a></li>
           <li><a href="#projects" onClick={() => handleScrollTo(projectsSectionRef)}>Projects</a></li>

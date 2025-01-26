@@ -21,6 +21,7 @@ function App() {
       <div>
         <Header
           heroSectionRef={heroSectionRef}
+          contactSectionRef={contactSectionRef}
           aboutSectionRef={aboutSectionRef}
           skillsSectionRef={skillsSectionRef}
           projectsSectionRef={projectsSectionRef}
