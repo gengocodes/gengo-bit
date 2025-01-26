@@ -12,15 +12,41 @@ html {
 }
 
 section {
-  position: relative;
   width: 100%;
-  overflow: hidden; /* Ensure sections don't overlap incorrectly */
+  position: relative;
+    flex: 1;
+    min-height: 300px; /* Ensure consistent height */
 }
-.credits{
-  font-size: 100px;
 
+.wave {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: transform 0.3s ease-out;
 }
-.line{
-  margin-top: 50px;
-  z-index: 0;
+
+
+
+/* Styling the wave for smoother transitions */
+.wave path {
+  transition: all 0.3s ease-out;
+}
+
+
+
+#hero {
+  background: black; /* Bright blue for the hero section */
+}
+
+#about {
+  background: #32cd32; /* Green background for the about section */
+}
+
+#skills {
+  background: #8a2be2; /* Purple for the skills section */
+}
+
+#projects {
+  background: #f0e68c; /* Light yellow for the projects section */
 }

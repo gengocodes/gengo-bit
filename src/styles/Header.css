@@ -7,11 +7,10 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  opacity: 1; /* Full opacity when not scrolled */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
 }
 
 /* Logo styles */

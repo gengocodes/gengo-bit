@@ -5,26 +5,31 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Header from "./components/Header";
 import Arrow from "./components/Arrow";
+import Welcome from "./components/Welcome";
 
 function App() {
   const heroSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
   const skillsSectionRef = useRef(null);
   const projectsSectionRef = useRef(null);
-
+  const welcomeSectionRef = useRef(null);
 
   return (
     <div className="App">
-      <section>
-
-        <Arrow />
-
+      <div>
         <Header
           heroSectionRef={heroSectionRef}
           aboutSectionRef={aboutSectionRef}
           skillsSectionRef={skillsSectionRef}
           projectsSectionRef={projectsSectionRef}
         />
+        
+        <section ref={welcomeSectionRef} id="welcome">
+          <Welcome />
+        </section>
+
+        <Arrow />
+
         <section ref={heroSectionRef} id="hero">
           <HeroSection />
         </section>
@@ -38,11 +43,9 @@ function App() {
         </section>
 
         <section ref={projectsSectionRef} id="projects">
-          <div className="line"></div>
           <Projects />
         </section>
-
-      </section>
+      </div>
     </div>
   );
 }
