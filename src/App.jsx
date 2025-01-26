@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <section>
-        
+
         <Arrow />
 
         <Header
