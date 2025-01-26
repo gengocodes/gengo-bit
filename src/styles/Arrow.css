@@ -1,0 +1,42 @@
+.ArrowUp {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(110, 22, 22, 0);
+    color: rgb(255, 98, 98);
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease, backdrop-filter 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    border: none;
+    outline: none;
+  }
+  
+  .ArrowUp:hover {
+    transform: scale(1.1);
+  }
+  
+  .ArrowUp:active {
+    transform: scale(0.95);
+  }
+  
+  .ArrowUp:focus {
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    .ArrowUp{
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .ArrowUp{
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+  }

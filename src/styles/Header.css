@@ -6,7 +6,7 @@ header {
   position: static;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   opacity: 1; /* Full opacity when not scrolled */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -88,12 +88,12 @@ header nav ul {
   right: -250px;
   width: 250px;
   height: 100%;
-  background-color: #fff; /* Same color as header */
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   transition: right 0.3s ease-in-out;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 99999;
 }
 
@@ -136,10 +136,9 @@ header nav ul {
   cursor: pointer;
 }
 
-/* Mobile view adjustments */
 @media (max-width: 768px) {
   header {
-    padding: 0.75rem 1rem;
+    padding: 2rem 2rem;
   }
 
   header .logo {
