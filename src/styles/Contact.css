@@ -41,7 +41,6 @@
   }
 }
 .slide{
-  height: 00px;
   width: 250px;
   display: flex;
   align-items: center;
@@ -75,13 +74,13 @@ svg:hover{
 
 @media (max-width:768px){
   .social-icon svg {
-    width: 1rem;
-    height: 1rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 @media (max-width:480px){
   .social-icon svg {
-    width: 1rem;
-    height: 1rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
