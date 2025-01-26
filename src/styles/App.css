@@ -4,7 +4,7 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrollbars */
   background-color: black; /* Fallback background */
   font-family: 'Poppins', sans-serif; /* Default font for body */
-  color: #333; /* Text color for the body */
+  color: black; /* Text color for the body */
 }
 
 html {
