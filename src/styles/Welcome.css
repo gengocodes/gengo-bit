@@ -34,23 +34,22 @@
   .container .typing-effect {
     font-size: 7rem;
     font-weight: 900;
-  }
-  .container .greet {
-    font-size: 6rem;
-    z-index: 0; 
-  }
-  .container .name {
-    font-size: 3rem;
-    z-index: 0; 
+    font-style: oblique;
   }
 
   @media (max-width:768px){
-
+    .container .typing-effect {
+      font-size: 3rem;
+      font-weight: 900;
+    }
   }
   @media (max-width:480px){
-  
+    .container .typing-effect {
+      font-size: 3rem;
+      font-weight: 900;
+    }
   }
-  
+
   .shapedividers_com-2104{
     overflow:hidden;
     position:relative;
@@ -77,20 +76,3 @@
     background-position: 50% 100%;   
     }  
     }
-     
-    @media (min-width:1025px){
-    .shapedividers_com-2104::before{ 
-    bottom: -0.1vw;
-    left: -0.1vw;
-    right: -0.1vw;
-    top: -0.1vw; 
-    background-size: 100% 330px;
-    background-position: 50% 100%;  
-    }
-    }
-    @media (min-width:2100px){
-    .shapedividers_com-2104::before{
-    background-size: 100% calc(2vw + 330px);
-    }
-    }
-     

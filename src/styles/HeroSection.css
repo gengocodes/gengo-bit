@@ -106,19 +106,3 @@
   }  
   }
    
-  @media (min-width:1025px){
-  .shapedividers_com-2105::before{ 
-  bottom: -0.1vw;
-  left: -0.1vw;
-  right: -0.1vw;
-  top: -0.1vw; 
-  background-size: 100% 330px;
-  background-position: 50% 100%;  
-  }
-  }
-  @media (min-width:2100px){
-  .shapedividers_com-2105::before{
-  background-size: 100% calc(2vw + 330px);
-  }
-  }
-   

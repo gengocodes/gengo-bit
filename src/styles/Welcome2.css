@@ -32,6 +32,24 @@
     box-shadow: 0 0 40px rgba(255, 255, 255, 1); 
     animation: imganimation 8s ease-in-out infinite;
   }
+  h1{
+    color:white;
+    justify-content: center;
+    font-weight: 1000;
+  }
+  .name {
+    font-size: 2rem;
+    margin-left: -50%;
+    z-index: 0;
+    position: absolute;
+    width: 10%;
+  }
+  .name2 {
+    margin-right: -50%;
+    font-size: 5rem;
+    z-index: 0;
+    position: absolute;
+  }
   @keyframes imganimation {
     0%{
         border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
