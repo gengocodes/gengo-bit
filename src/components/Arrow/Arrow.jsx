@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronUp } from "react-icons/fa";
-import '../styles/Arrow.css';
+import './Arrow.css';
 
 function Arrow() {
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import '../styles/Header.css';
-import Logo from '../assets/Logo.png'; // Import the logo image
+import './Header.css';
+import Logo from '../../assets/Logo.png'; // Import the logo image
 
 function Header({
   heroSectionRef,

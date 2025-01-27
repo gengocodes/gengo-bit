@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
-import HeroSection from "./components/HeroSection";
+import HeroSection from "./components/HeroSection/HeroSection";
 // import About from "./components/About";
 // import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Header from "./components/Header";
-import Arrow from "./components/Arrow";
-import Welcome from "./components/Welcome";
-import Contact from "./components/Contact";
+import Projects from "./components/Projects/Projects";
+import Header from "./components/Header/Header";
+import Arrow from "./components/Arrow/Arrow";
+import Welcome from "./components/Welcome/Welcome";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   const heroSectionRef = useRef(null);

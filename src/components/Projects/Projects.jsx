@@ -1,5 +1,11 @@
 import React, { useEffect } from 'react';
-import "../styles/Projects.css";
+import "./Projects.css";
+import project1 from "../../assets/projects/project1.jpg"
+import project2 from "../../assets/projects/project2.jpg"
+import project3 from "../../assets/projects/project3.jpg"
+import project4 from "../../assets/projects/project4.jpg"
+import project5 from "../../assets/projects/project5.png"
+
 
 const Projects = () => {
 
@@ -89,7 +95,7 @@ const Projects = () => {
 <div className="carousel">
         <div className="list">
             <div className="item">
-                <img src={require("../assets/projects/project1.jpg")} alt=""/>
+                <img src={project1} alt=""/>
                 <div className="content">
                     <div className="author">GENGO-BIT</div>
                     <div className="title">PROJECT 1</div>
@@ -107,7 +113,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-            <img src={require("../assets/projects/project2.jpg")} alt=""/>
+            <img src={project2} alt=""/>
                 <div className="content">
                     <div className="author">GENGO-BIT</div>
                     <div className="title">PROJECT 2</div>
@@ -123,7 +129,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-                <img src={require("../assets/projects/project3.jpg")} alt=""/>
+                <img src={project3} alt=""/>
                 <div className="content">
                     <div className="author">GENGO-BIT</div>
                     <div className="title">PROJECT 3</div>
@@ -139,7 +145,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-                <img src={require("../assets/projects/project4.jpg")} alt=""/>
+                <img src={project4} alt=""/>
                 <div className="content">
                     <div className="author">GENGO-BIT</div>
                     <div className="title">PROJECT 4</div>
@@ -157,7 +163,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-                <img src={require("../assets/projects/project5.png")} alt=""/>
+                <img src={project5} alt=""/>
                 <div className="content">
                     <div className="author">GENGO-BIT</div>
                     <div className="title">PROJECT5</div>
@@ -177,7 +183,7 @@ const Projects = () => {
     
         <div className="thumbnail">
             <div className="item">
-                <img src={require("../assets/projects/project1.jpg")} alt=""/>
+                <img src={project1} alt=""/>
                 <div className="content">
                     <div className="title">
                         Project 1
@@ -188,7 +194,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-                <img src={require("../assets/projects/project2.jpg")} alt=""/>
+                <img src={project2} alt=""/>
                 <div className="content">
                     <div className="title">
                         Project 2
@@ -199,7 +205,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-                <img src={require("../assets/projects/project3.jpg")} alt=""/>
+                <img src={project3} alt=""/>
                 <div className="content">
                     <div className="title">
                         Project 3
@@ -210,7 +216,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-                <img src={require("../assets/projects/project4.jpg")} alt=""/>
+                <img src={project4} alt=""/>
                 <div className="content">
                     <div className="title">
                         Project 4
@@ -221,7 +227,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="item">
-                <img src={require("../assets/projects/project5.png")} alt=""/>
+                <img src={project5} alt=""/>
                 <div className="content">
                     <div className="title">
                         Project 5

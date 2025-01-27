@@ -1,10 +1,12 @@
 *{
   margin: 0;
 }
+body{
+  color: #1E201E;
+}
 /* Initial styles for the header */
 header {
   background-color: #fff;
-  color: #333;
   padding: 3rem 3rem 0 3rem;
   position: static;
   top: 0;
@@ -56,7 +58,7 @@ header nav ul {
 }
 
 .desktop-nav ul li a {
-  color: #333;
+  color: #1E201E;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;

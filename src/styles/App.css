@@ -4,7 +4,6 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrollbars */
   background-color: black; /* Fallback background */
   font-family: 'Poppins', sans-serif; /* Default font for body */
-  color: black; /* Text color for the body */
 }
 
 html {
@@ -33,14 +32,6 @@ section {
   transition: all 0.3s ease-out;
 }
 
-
-#welcome2{
-  background: black;
-}
-
-#hero {
-  background: white; /* Bright blue for the hero section */
-}
 
 #about {
   background: #32cd32; /* Green background for the about section */
