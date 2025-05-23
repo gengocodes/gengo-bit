@@ -1,0 +1,57 @@
+.resumebutton-icon {
+    display: flex;
+    border: 0.1vw #C92116 solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+
+  .resumeicon {
+    background-color: #EAEFEF;
+    padding: 0.7vw 0.7vw 0.3vw 0.7vw;
+  }
+
+  .resumeicon img {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 8.5vw;
+    height: 3vw;
+  }
+  
+  .resumebutton-icon:hover {
+    border-color: #ce4238;
+  }
+
+  .resumebutton-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+
+  .side {
+    position: absolute;
+    height: 3vw;
+    width: 8.5vw;
+    display: flex;
+    font-size: 0.8vw;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .resume-top {
+    background: #ce4238;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 0, 2em);
+  }
+
+  .resume-front {
+    background: #C92116;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+  }

@@ -9,26 +9,9 @@ function Header({
   projectsSectionRef,
   contactSectionRef
 }) {
-  const [isScrolled, setIsScrolled] = useState(false);
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Handle scroll event to modify header styles
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true); // Background changes when scroll position is more than 0
-      } else {
-        setIsScrolled(false); // Reset when at the top
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   const handleScrollTo = (ref) => {
     if (ref.current) {
@@ -40,8 +23,29 @@ function Header({
     setIsMenuOpen(!isMenuOpen);
   };
 
+    const [scroll, setScroll] = useState(0);
+
+    useEffect(() => {
+
+        let progressBarHandler = () => {
+            
+            const totalScroll = document.documentElement.scrollTop;
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scroll = `${totalScroll / windowHeight}`;
+
+            setScroll(scroll);
+        }
+
+        window.addEventListener("scroll", progressBarHandler);
+
+        return () => window.removeEventListener("scroll", progressBarHandler);
+    });
+
   return (
-    <header className={isScrolled ? "scrolled" : ""}>
+    <header>
+      <div id="progressBarContainer">
+        <div id="progressBar" style={{transform: `scale(${scroll}, 1)`, opacity: `${scroll}`}} />
+      </div>
       <div className="logo">
         <img src={Logo} alt="Gengo-bit Logo" /> {/* Display the Logo image */}
       </div>

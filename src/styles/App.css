@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrollbars */
-  background-color: black; /* Fallback background */
+  background-color: #EAEFEF; /* Fallback background */
   font-family: 'Poppins', sans-serif; /* Default font for body */
 }
 

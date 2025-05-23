@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Welcome.css';
+import paul_pic from "../../assets/paul-huge-pic.png"
+import GithubButton from "./GithubButton/GithubButton"
+import ResumeButton from "./ResumeButton/ResumeButton";
 
 function Welcome() {
     const [displayedText, setDisplayedText] = useState(""); // Text being displayed
     const [isTyping, setIsTyping] = useState(true); // Whether typing or deleting
     const [currentTextIndex, setCurrentTextIndex] = useState(0); // Index of current text
-    const fullTexts = useRef(["Hi!", "Hola!", "Bonjour!", "Hallo!", "Ciao!", "Olá!", "Konnichiwa!", "Nǐ hǎo!", "Namaste!"]); // List of texts to alternate
-    const typingSpeed = 150; // Speed of typing in ms
-    const deletingSpeed = 100; // Speed of deleting in ms
+    const fullTexts = useRef(["HEY", "IT'S", "PAUL"]); // List of texts to alternate
+    const typingSpeed = 300; // Speed of typing in ms
+    const deletingSpeed = 150; // Speed of deleting in ms
     const pauseTime = 2000; // Pause before switching text
   
     useEffect(() => {
@@ -45,12 +48,24 @@ function Welcome() {
     }, [displayedText, isTyping, currentTextIndex]); // Dependencies to trigger effect
 
   return (
-    <div className="main shapedividers_com-2104">
-      <div className="sec">
+    <div className="main shapedividers_com-8755">
         <div className="container">
-          <span className="typing-effect"> {displayedText}</span>
+          <img src={paul_pic} className="paul_pic" alt="paul pic"/>  
+          <span className="typing-effect"> {displayedText}</span> 
+          <div className="welcome-texts">
+            
+              <span className="welcome-greetings">HELLO, I'M <span className="welcome-name">PAUL CORSINO</span></span>
+              <span className="welcome-desc1">I am a <span className="welcome-job">Full-Stack Developer</span> from the <span className="ph">Philippines</span></span>
+              <span className="welcome-catch">I don't just write code or wire circuits — I craft systems that interact with the world and improve it.</span>
+                <div className="welcome-buttons">
+                  <ResumeButton />
+                  <GithubButton />
+                </div>
+              
+          </div>
+            
+          
         </div>
-      </div>
     </div>
   )
 }

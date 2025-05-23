@@ -46,7 +46,7 @@ const HeroSection = () => {
   }, [displayedText, isTyping, currentTextIndex]); // Dependencies to trigger effect
 
   return (
-    <div className="shapedividers_com-2105">
+    <div className="shapedividers_com-7117">
     <section className="hero-section">
       <div className="hero-content">
         <h1>

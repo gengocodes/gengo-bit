@@ -2,11 +2,12 @@ import React, { useRef } from "react";
 import HeroSection from "./components/HeroSection/HeroSection";
 // import About from "./components/About";
 // import Skills from "./components/Skills";
-import Projects from "./components/Projects/Projects";
+// import Projects from "./components/Projects/Projects";
 import Header from "./components/Header/Header";
 import Arrow from "./components/Arrow/Arrow";
 import Welcome from "./components/Welcome/Welcome";
 import Contact from "./components/Contact/Contact";
+import Techstack from "./components/Techstack/Techstack";
 
 function App() {
   const heroSectionRef = useRef(null);
@@ -16,9 +17,11 @@ function App() {
   const welcomeSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
 
+
   return (
     <div className="App">
-      <div>
+
+        <Arrow />
         <Header
           heroSectionRef={heroSectionRef}
           contactSectionRef={contactSectionRef}
@@ -31,11 +34,9 @@ function App() {
           <Welcome />
         </section>
 
-        <section ref={contactSectionRef} id="contact">
-          <Contact />
-        </section>
+ 
 
-        <Arrow />
+        <Techstack />
 
         <section ref={heroSectionRef} id="hero">
           <HeroSection />
@@ -49,10 +50,13 @@ function App() {
           <Skills />
         </section> */}
 
-        <section ref={projectsSectionRef} id="projects">
+        {/* <section ref={projectsSectionRef} id="projects">
           <Projects />
+        </section> */}
+        <section ref={contactSectionRef} id="contact">
+          <Contact />
         </section>
-      </div>
+
     </div>
   );
 }

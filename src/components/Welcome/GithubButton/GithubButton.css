@@ -1,0 +1,57 @@
+.githubbutton-icon {
+    display: flex;
+    border: 0.1vw #333446 solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+
+  .githubicon {
+    background-color: #EAEFEF;
+    padding: 0.7vw 0.7vw 0.3vw 0.7vw;
+  }
+
+  .githubicon svg {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 8.5vw;
+    height: 3vw;
+  }
+  
+  .githubbutton-icon:hover {
+    border-color: #333446;
+  }
+
+  .githubbutton-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+
+  .side {
+    position: absolute;
+    height: 3vw;
+    width: 8.5vw;
+    display: flex;
+    font-size: 0.8vw;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+
+  .top {
+    background: #333446;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 0, 2em);
+  }
+
+  .front {
+    background: #222229;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+  }

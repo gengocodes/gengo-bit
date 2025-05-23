@@ -6,15 +6,17 @@ body{
 }
 /* Initial styles for the header */
 header {
-  background-color: #fff;
-  padding: 3rem 3rem 0 3rem;
-  position: static;
+  background-color: #EAEFEF;
+  padding: 2.3rem;
+  position: sticky;
   top: 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(127, 140, 170, 0.1);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   justify-content: space-between;
+  backdrop-filter: blur(10px);
   align-items: stretch;
+  z-index: 9999;
 }
 
 /* Logo styles */
@@ -138,7 +140,27 @@ header nav ul {
   right: 10px;
   cursor: pointer;
 }
+#progressBarContainer {
+    position: fixed;
+    z-index: 10;
+    background: rgba(255,255,255,0.05);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+  
+  
+#progressBar {
+    background: linear-gradient(to right, #B8CFCE, #333446);
+    transform-origin: top left;
+    transform: scale(0,0);
+    opacity: 0;
+}
 
+#progressBarContainer,
+#progressBar {
+    height: 10px;
+}
 @media (max-width: 768px) {
   header {
     padding: 2.5rem 2.5rem 0 2.5rem;
