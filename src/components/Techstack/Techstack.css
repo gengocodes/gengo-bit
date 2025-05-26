@@ -1,5 +1,19 @@
-.techstack-main{
-    width: 100vw;
-    height: 80vh;
-    background-color: #333446;
+.techstack-main {
+  width: 100vw;
+  height: 80vh;
+  background-color: #222229;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-cont {
+  display: flex;
+  background: white;
+  height: 90%;
+  width: 90%;
+}
+.tech-header {
+  background: blue;
+  height: 10%;
+  width: 100%;
 }

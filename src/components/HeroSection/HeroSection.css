@@ -1,5 +1,5 @@
-body{
-  color: #1E201E;
+body {
+  color: #1e201e;
 }
 .hero-section {
   position: relative;
@@ -65,63 +65,61 @@ body{
 }
 
 @media (max-width: 768px) {
- .hero-content h1{
-  font-size: 3rem;
- }
- .hero-content p{
-  font-size: 1rem;
- }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
-  .hero-content h1{
+  .hero-content h1 {
     font-size: 3rem;
-   }
-   .hero-content p{
+  }
+  .hero-content p {
     font-size: 1rem;
-   }
+  }
+}
+.shapedividers_com-1822 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-1822::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 152px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.278 3.62" preserveAspectRatio="none"><path d="M35.278.092S8.238.267 0 3.62V.092z" opacity=".2" fill="%23222229"/><path d="M35.278.092S8.238.246 0 3.194V.092z" opacity=".2" fill="%23222229"/><path d="M35.278.092S8.238.223 0 2.738V.092zM35.278.092H0V0h35.278z" fill="%23222229"/></svg>');
 }
 
-.shapedividers_com-7117{
-overflow:hidden;
-position:relative;
-}
-.shapedividers_com-7117::before{
-content:'';
-font-family:'shape divider from ShapeDividers.com';
-position: absolute;
-bottom: -1px;
-left: -1px;
-right: -1px;
-top: -1px;
-z-index: 3;
-pointer-events: none;
-background-repeat: no-repeat; 
-background-size: 100% 50px;
-background-position: 50% 0%;    
-background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" fill="%23333446"/></svg>'); 
+@media (min-width: 768px) {
+  .shapedividers_com-1822::before {
+    background-size: 100% 149px;
+    background-position: 50% 0%;
+  }
 }
 
-@media (min-width:768px){
-.shapedividers_com-7117::before{
-background-size: 100% 79px;
-background-position: 50% 0%;   
-}  
+@media (min-width: 1025px) {
+  .shapedividers_com-1822::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 151px;
+    background-position: 50% 0%;
+  }
 }
- 
-@media (min-width:1025px){
-.shapedividers_com-7117::before{ 
-bottom: -0.1vw;
-left: -0.1vw;
-right: -0.1vw;
-top: -0.1vw; 
-background-size: 102% 102px;
-background-position: 50% 0%;  
+@media (min-width: 2100px) {
+  .shapedividers_com-1822::before {
+    background-size: 100% calc(2vw + 151px);
+  }
 }
-}
-@media (min-width:2100px){
-.shapedividers_com-7117::before{
-background-size: 102% calc(2vw + 102px);
-}
-}
- 

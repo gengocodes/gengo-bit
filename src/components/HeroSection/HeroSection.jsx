@@ -12,7 +12,6 @@ const HeroSection = () => {
   const pauseTime = 2000; // Pause before switching text
 
   useEffect(() => {
-
     let timeout;
 
     const typeAndDelete = () => {
@@ -34,7 +33,9 @@ const HeroSection = () => {
           timeout = setTimeout(typeAndDelete, deletingSpeed);
         } else {
           setIsTyping(true); // Switch to typing the next text
-          setCurrentTextIndex((prevIndex) => (prevIndex + 1) % fullTexts.current.length);
+          setCurrentTextIndex(
+            (prevIndex) => (prevIndex + 1) % fullTexts.current.length
+          );
           timeout = setTimeout(typeAndDelete, typingSpeed);
         }
       }
@@ -46,17 +47,26 @@ const HeroSection = () => {
   }, [displayedText, isTyping, currentTextIndex]); // Dependencies to trigger effect
 
   return (
-    <div className="shapedividers_com-7117">
-    <section className="hero-section">
-      <div className="hero-content">
-        <h1>
-          Welcome to my 
-          <span className="typing-effect"> {displayedText}</span>
-        </h1>
-        <p>This is still a work in progress. Currently working on 
-          <a href="https://ognegchat.netlify.app" target="_blank" rel="noreferrer"> GenChat</a></p>
-      </div>
-    </section>
+    <div className="shapedividers_com-1822">
+      <section className="hero-section">
+        <div className="hero-content">
+          <h1>
+            Welcome to my
+            <span className="typing-effect"> {displayedText}</span>
+          </h1>
+          <p>
+            This is still a work in progress. Currently working on
+            <a
+              href="https://ognegchat.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              GenChat
+            </a>
+          </p>
+        </div>
+      </section>
     </div>
   );
 };

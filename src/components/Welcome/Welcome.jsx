@@ -1,20 +1,25 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./Welcome.css";
 import paul_pic2 from "../../assets/paul_mob_pic.png";
 import paul_pic from "../../assets/paul-huge-pic.png";
 import GithubButton from "./GithubButton/GithubButton";
 import ResumeButton from "./ResumeButton/ResumeButton";
+import Cursor from "./Cursor/Cursor";
 
 function Welcome() {
   const [displayedText, setDisplayedText] = useState(""); // Text being displayed
   const [isTyping, setIsTyping] = useState(true); // Whether typing or deleting
   const [currentTextIndex, setCurrentTextIndex] = useState(0); // Index of current text
-  const fullTexts = useRef(["HEY", "IT IS", "PAUL"]); // List of texts to alternate
   const typingSpeed = 300; // Speed of typing in ms
   const deletingSpeed = 150; // Speed of deleting in ms
   const pauseTime = 2000; // Pause before switching text
 
   const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
+  const fullTexts = useMemo(() => {
+    return isMobile
+      ? ["HEY", "OLA", "やあ", "ハイ", "SUP", "你好", "안녕", "नम"]
+      : ["HI", "YO", "哈", "OI", "い", "お"];
+  }, [isMobile]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -30,7 +35,7 @@ function Welcome() {
     let timeout;
 
     const typeAndDelete = () => {
-      const currentFullText = fullTexts.current[currentTextIndex];
+      const currentFullText = fullTexts[currentTextIndex];
 
       if (isTyping) {
         // Typing effect
@@ -49,7 +54,7 @@ function Welcome() {
         } else {
           setIsTyping(true); // Switch to typing the next text
           setCurrentTextIndex(
-            (prevIndex) => (prevIndex + 1) % fullTexts.current.length
+            (prevIndex) => (prevIndex + 1) % fullTexts.length
           );
           timeout = setTimeout(typeAndDelete, typingSpeed);
         }
@@ -59,11 +64,12 @@ function Welcome() {
     timeout = setTimeout(typeAndDelete, typingSpeed);
 
     return () => clearTimeout(timeout); // Cleanup timeout on unmount
-  }, [displayedText, isTyping, currentTextIndex]); // Dependencies to trigger effect
+  }, [displayedText, isTyping, currentTextIndex, fullTexts]); // Dependencies to trigger effect
 
   return (
-    <div className="main shapedividers_com-8755">
+    <div className="main shapedividers_com-3035">
       <div className="container">
+        <Cursor />
         <img
           src={isMobile ? paul_pic : paul_pic2}
           className="paul_pic"
