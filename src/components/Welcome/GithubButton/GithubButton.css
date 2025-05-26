@@ -8,10 +8,12 @@
 
   .githubicon {
     background-color: #EAEFEF;
-    padding: 0.7vw 0.7vw 0.3vw 0.7vw;
+    margin: auto;
+    padding: 0.4vw;
   }
 
   .githubicon svg {
+    margin-top: 0.3vw;
     width: 1.5vw;
     height: 1.5vw;
   }

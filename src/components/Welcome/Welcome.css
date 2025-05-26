@@ -133,6 +133,14 @@
 overflow:hidden;
 position:relative;
 }
+.bg{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
 .shapedividers_com-8755::before{
 content:'';
 font-family:'shape divider from ShapeDividers.com';

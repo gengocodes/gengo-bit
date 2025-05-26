@@ -9,7 +9,7 @@ const ResumeButton = () => {
   return (
       <div className="resumebutton-icon">
         <div className="resumeicon">
-          <img width="96" height="96" src="https://img.icons8.com/external-goofy-color-kerismaker/96/external-CV-business-goofy-color-kerismaker.png" alt="external-CV-business-goofy-color-kerismaker"/>
+          <img src="https://img.icons8.com/external-goofy-color-kerismaker/96/external-CV-business-goofy-color-kerismaker.png" alt="external-CV-business-goofy-color-kerismaker"/>
         </div>
         <div className="cube">
           <span className="side resume-front" onClick={CV}>RESUME</span>

@@ -51,9 +51,10 @@ function Welcome() {
     <div className="main shapedividers_com-8755">
         <div className="container">
           <img src={paul_pic} className="paul_pic" alt="paul pic"/>  
+          <div className="bg"></div>
           <span className="typing-effect"> {displayedText}</span> 
           <div className="welcome-texts">
-            
+              
               <span className="welcome-greetings">HELLO, I'M <span className="welcome-name">PAUL CORSINO</span></span>
               <span className="welcome-desc1">I am a <span className="welcome-job">Full-Stack Developer</span> from the <span className="ph">Philippines</span></span>
               <span className="welcome-catch">I don't just write code or wire circuits — I craft systems that interact with the world and improve it.</span>

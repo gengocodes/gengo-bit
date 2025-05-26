@@ -8,10 +8,12 @@
 
   .resumeicon {
     background-color: #EAEFEF;
-    padding: 0.7vw 0.7vw 0.3vw 0.7vw;
+    margin: auto;
+    padding: 0.4vw;
   }
 
   .resumeicon img {
+    margin-top: 0.3vw;
     width: 1.5vw;
     height: 1.5vw;
   }
@@ -54,4 +56,7 @@
     background: #C92116;
     color: #fff;
     transform: translate3d(0, 0, 1em);
+  }
+  @media (min-width:768px){
+
   }
