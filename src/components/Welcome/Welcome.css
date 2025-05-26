@@ -196,6 +196,9 @@ background-size: 102% calc(2vw + 102px);
   }
 }
 @media (max-width:600px){
+  .main{
+    height: 80vh;
+  }
   .paul_pic{
     left: auto;
     right: auto;
@@ -203,7 +206,7 @@ background-size: 102% calc(2vw + 102px);
     height: 50vh;
   }
   .welcome-texts{
-    margin-top: -15vw;
+    margin-top: -13vw;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
