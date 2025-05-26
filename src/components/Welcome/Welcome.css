@@ -199,11 +199,11 @@ background-size: 102% calc(2vw + 102px);
   .paul_pic{
     left: auto;
     right: auto;
-    margin-bottom: -10vw;
+    margin-bottom: -15vw;
     height: 50vh;
   }
   .welcome-texts{
-    margin-top: -13vw;
+    margin-top: -7vw;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
@@ -246,6 +246,7 @@ background-size: 102% calc(2vw + 102px);
     gap: 10vw;
   }
   .bg{
+    margin-top: 20vw;
     zoom: 120%;
   }
 }
