@@ -8,7 +8,7 @@ function Welcome() {
     const [displayedText, setDisplayedText] = useState(""); // Text being displayed
     const [isTyping, setIsTyping] = useState(true); // Whether typing or deleting
     const [currentTextIndex, setCurrentTextIndex] = useState(0); // Index of current text
-    const fullTexts = useRef(["HEY", "IT'S", "PAUL"]); // List of texts to alternate
+    const fullTexts = useRef(["HEY", "IT IS", "PAUL"]); // List of texts to alternate
     const typingSpeed = 300; // Speed of typing in ms
     const deletingSpeed = 150; // Speed of deleting in ms
     const pauseTime = 2000; // Pause before switching text
