@@ -59,6 +59,9 @@
   }
 
   @media (max-width:600px){
+    .top {
+      transform: rotateX(-90deg) translate3d(0, 10%, 2em);
+    }
     .side {
       min-height: 9vw;
       width: 20vw;

@@ -3,7 +3,7 @@ import "./GithubButton.css";
 const GithubButton = () => {
 
   const Github = () => {
-    window.open('https://github.com/Gengo-bit', '_blank');
+    window.open('https://github.com/gengocodes', '_blank');
   };
 
   return (

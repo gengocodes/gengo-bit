@@ -83,8 +83,11 @@
     }
   }
   @media (max-width:600px){
+    .resume-top {
+      transform: rotateX(-90deg) translate3d(0, 10%, 2em);
+    }
     .side {
-      min-height: 9vw;
+      min-height: 9.2vw;
       width: 20vw;
       font-size: 2vw;
       letter-spacing: 0.5px;

@@ -61,14 +61,13 @@
   }
   .welcome-greetings{
     font-size: 2vw;
-    font-weight: 700;
-    border-bottom: solid 5px #333446;
+    font-weight: 500;
+    border-bottom: solid 1px #333446;
   }
   .welcome-desc1{
     font-size: 4vw;
     font-weight: 700;
     font-style: oblique;
-    margin-top: -0.5vw;
   }
   .welcome-name{
     color: #0E2148;
@@ -76,7 +75,7 @@
   }
   .welcome-catch{
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 2vw;
   }
   .welcome-buttons{
@@ -203,7 +202,7 @@ background-size: 102% calc(2vw + 102px);
     height: 50vh;
   }
   .welcome-texts{
-    margin-top: -7vw;
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
@@ -213,13 +212,13 @@ background-size: 102% calc(2vw + 102px);
   }
   .welcome-greetings{
     font-size: 5vw;
-    font-weight: 450;
+    font-weight: 350;
     border-bottom: solid 0px #333446;
     margin-left: auto;
     margin-right: auto;
   }
   .welcome-name{
-    font-weight: 550;
+    font-weight: 450;
   }
   .welcome-desc1{
     font-size: 9vw;
@@ -246,7 +245,7 @@ background-size: 102% calc(2vw + 102px);
     gap: 10vw;
   }
   .bg{
-    margin-top: 20vw;
-    zoom: 120%;
+    margin-top: 30vw;
+    zoom: 130%;
   }
 }
