@@ -1,207 +1,207 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .main {
-    position: relative;
-    overflow: hidden;
-    height: 85vh;
-    width: 100vw;
-    background: white;
-    backdrop-filter: brightness(100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  position: relative;
+  overflow: hidden;
+  height: 85vh;
+  width: 100vw;
+  background: white;
+  backdrop-filter: brightness(100%);
+}
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-texts {
+  display: flex;
+  width: 100vw;
+  margin-top: -7vw;
+  margin-left: 30vw;
+  margin-right: 5vw;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  z-index: 10;
+}
+.welcome-job {
+  font-weight: 900;
+  background: linear-gradient(
+    to right,
+    #0e2148 20%,
+    #483aa0 30%,
+    #7965c1 70%,
+    #0e2148 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+.ph {
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    #c92116 20%,
+    #161e4d 30%,
+    #f6cc15 70%,
+    #c92116 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+.welcome-greetings {
+  font-size: 2vw;
+  font-weight: 500;
+  border-bottom: solid 1px #333446;
+}
+.welcome-desc1 {
+  font-size: 4vw;
+  font-weight: 700;
+  font-style: oblique;
+}
+.welcome-name {
+  color: #0e2148;
+  font-weight: 900;
+}
+.welcome-catch {
+  font-size: 1vw;
+  font-weight: 400;
+  margin-top: 2vw;
+}
+.welcome-buttons {
+  margin-top: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -3vw;
+  gap: 3vw;
+}
+.paul_pic {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 85vh;
+  z-index: 1;
+}
+.container .typing-effect {
+  position: fixed;
+  left: 0;
+  font-size: 90vh;
+  color: #333446;
+  font-weight: 1000;
+  font-style: oblique;
+  z-index: 0;
+  opacity: 20%;
+  margin-bottom: 5vh;
+}
+@media (max-width: 768px) {
+  .container .typing-effect {
+    font-size: 4rem;
+    font-weight: 900;
   }
   .container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+    margin-top: -40%;
   }
-  .welcome-texts{
-    display: flex;
-    width: 100vw;
-    margin-top: -7vw;
-    margin-left: 30vw;
-    margin-right: 5vw;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    z-index: 10;
-  }
-  .welcome-job{
-    font-weight: 900;
-    background: linear-gradient(
-        to right,
-        #0E2148 20%,
-        #483AA0 30%,
-        #7965C1 70%,
-        #0E2148 80%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-  }
-  .ph{
-    font-weight: 800;
-        background: linear-gradient(
-        to right,
-        #C92116 20%,
-        #161E4D 30%,
-        #F6CC15 70%,
-        #C92116 80%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 500% auto;
-    animation: textShine 5s ease-in-out infinite alternate;
-  }
-  .welcome-greetings{
-    font-size: 2vw;
-    font-weight: 500;
-    border-bottom: solid 1px #333446;
-  }
-  .welcome-desc1{
-    font-size: 4vw;
-    font-weight: 700;
-    font-style: oblique;
-  }
-  .welcome-name{
-    color: #0E2148;
+}
+@media (max-width: 480px) {
+  .container .typing-effect {
+    font-size: 4rem;
     font-weight: 900;
   }
-  .welcome-catch{
-    font-size: 1vw;
-    font-weight: 400;
-    margin-top: 2vw;
+  .container {
+    margin-top: -40%;
   }
-  .welcome-buttons{
-    margin-top: 1.5vw;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -3vw;
-    gap: 3vw;
-  }
-  .paul_pic{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 85vh;
-    z-index: 1;
-  }
-  .container .typing-effect{
-    position: fixed;
-    left: 0;
-    font-size: 90vh;
-    color: #333446;
-    font-weight: 1000;
-    font-style: oblique;
-    z-index: 0;
-    opacity: 20%;
-    margin-bottom: 5vh;
-  }
-  @media (max-width:768px){
-    .container .typing-effect {
-      font-size: 4rem;
-      font-weight: 900;
-    }
-    .container {
-      margin-top: -40%;
-    }
-  }
-  @media (max-width:480px){
-    .container .typing-effect {
-      font-size: 4rem;
-      font-weight: 900;
-    }
-    .container {
-      margin-top: -40%;
-    }
-  }
+}
 @keyframes textShine {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
-.shapedividers_com-8755{
-overflow:hidden;
-position:relative;
+.shapedividers_com-8755 {
+  overflow: hidden;
+  position: relative;
 }
-.bg{
+.bg {
   position: absolute;
   height: 100vh;
   width: 100vw;
-background-color: #ffffff;
-background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/graphy.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-.shapedividers_com-8755::before{
-content:'';
-font-family:'shape divider from ShapeDividers.com';
-position: absolute;
-bottom: -1px;
-left: -1px;
-right: -1px;
-top: -1px;
-z-index: 3;
-pointer-events: none;
-background-repeat: no-repeat; 
-background-size: 100% 50px;
-background-position: 50% 100%;    
-background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" fill="%23333446"/></svg>'); 
-}
-
-@media (min-width:768px){
-.shapedividers_com-8755::before{
-background-size: 100% 79px;
-background-position: 50% 100%;   
-}  
-}
- 
-@media (min-width:1025px){
-.shapedividers_com-8755::before{ 
-bottom: -0.1vw;
-left: -0.1vw;
-right: -0.1vw;
-top: -0.1vw; 
-background-size: 102% 102px;
-background-position: 50% 100%;  
-}
-}
-@media (min-width:2100px){
-.shapedividers_com-8755::before{
-background-size: 102% calc(2vw + 102px);
-}
+.shapedividers_com-8755::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 50px;
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" fill="%23333446"/></svg>');
 }
 
-@media (max-width:1280px){
-  .welcome-texts{
+@media (min-width: 768px) {
+  .shapedividers_com-8755::before {
+    background-size: 100% 79px;
+    background-position: 50% 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .shapedividers_com-8755::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 102% 102px;
+    background-position: 50% 100%;
+  }
+}
+@media (min-width: 2100px) {
+  .shapedividers_com-8755::before {
+    background-size: 102% calc(2vw + 102px);
+  }
+}
+
+@media (max-width: 1280px) {
+  .welcome-texts {
     margin-top: -7vw;
     margin-left: 40vw;
     margin-right: 5vw;
   }
 }
-@media (max-width:768px){
-  .welcome-texts{
+@media (max-width: 768px) {
+  .welcome-texts {
     margin-top: 60vw;
     margin-left: 43vw;
     margin-right: 5vw;
   }
 }
-@media (max-width:600px){
-  .paul_pic{
+@media (max-width: 600px) {
+  .paul_pic {
     left: auto;
     right: auto;
     margin-bottom: -15vw;
     height: 50vh;
   }
-  .welcome-texts{
+  .welcome-texts {
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
@@ -210,17 +210,17 @@ background-size: 102% calc(2vw + 102px);
     z-index: 10;
     gap: 2vw;
   }
-  .welcome-greetings{
+  .welcome-greetings {
     font-size: 5vw;
-    font-weight: 350;
+    font-weight: 450;
     border-bottom: solid 0px #333446;
     margin-left: auto;
     margin-right: auto;
   }
-  .welcome-name{
-    font-weight: 450;
+  .welcome-name {
+    font-weight: 550;
   }
-  .welcome-desc1{
+  .welcome-desc1 {
     font-size: 9vw;
     font-weight: 700;
     font-style: oblique;
@@ -230,22 +230,22 @@ background-size: 102% calc(2vw + 102px);
     text-align: center;
     line-height: 10vw;
   }
-  .welcome-catch{
+  .welcome-catch {
     font-size: 3vw;
     font-weight: 350;
     margin-top: 2vw;
     text-align: center;
     width: 75%;
   }
-  .welcome-buttons{
+  .welcome-buttons {
     margin-top: 1.5vw;
     display: flex;
     flex-direction: row;
     margin-bottom: -3vw;
     gap: 10vw;
   }
-  .bg{
-    margin-top: 30vw;
-    zoom: 130%;
+  .bg {
+    margin-top: 60vw;
+    zoom: 150%;
   }
 }

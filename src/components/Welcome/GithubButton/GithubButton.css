@@ -1,86 +1,129 @@
 .githubbutton-icon {
-    display: flex;
-    border: 0.1vw #333446 solid;
-    width: fit-content;
-    height: fit-content;
-    cursor: pointer;
-  }
+  display: flex;
+  border: 0.2vw #333446 solid;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
 
-  .githubicon {
-    background-color: #EAEFEF;
-    margin: auto;
-    padding: 0.4vw;
-  }
+.githubicon {
+  background-color: #eaefef;
+  margin: auto;
+  padding: 0.4vw;
+}
 
-  .githubicon svg {
-    margin-top: 0.3vw;
-    width: 1.5vw;
-    height: 1.5vw;
-  }
+.githubicon svg {
+  margin-top: 0.3vw;
+  width: 1.5vw;
+  height: 1.5vw;
+}
 
-  .cube {
-    transition: all 0.4s;
-    transform-style: preserve-3d;
-    width: 8.5vw;
-    height: 3vw;
-  }
-  
-  .githubbutton-icon:hover {
-    border-color: #333446;
-  }
+.cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 8.5vw;
+  height: 3vw;
+}
 
-  .githubbutton-icon:hover .cube {
-    transform: rotateX(90deg);
-  }
+.githubbutton-icon:hover {
+  border-color: #333446;
+}
 
+.githubbutton-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 3vw;
+  width: 8.5vw;
+  display: flex;
+  font-size: 0.8vw;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.top {
+  background: #333446;
+  color: #fff;
+  transform: rotateX(-90deg) translate3d(0, 0, 2em);
+}
+
+.front {
+  background: #222229;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
+}
+@media (max-width: 1600px) {
   .side {
-    position: absolute;
-    height: 3vw;
-    width: 8.5vw;
-    display: flex;
-    font-size: 0.8vw;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    font-weight: bold;
+    height: 3.1vw;
   }
-
+}
+@media (max-width: 1280px) {
+  .side {
+    height: 3.2vw;
+  }
+}
+@media (max-width: 1080px) {
   .top {
-    background: #333446;
-    color: #fff;
-    transform: rotateX(-90deg) translate3d(0, 0, 2em);
+    transform: rotateX(-90deg) translate3d(0, 5%, 2em);
   }
+  .side {
+    height: 3.4vw;
+  }
+}
+@media (max-width: 960px) {
+  .side {
+    height: 3.7vw;
+  }
+}
+@media (max-width: 768px) {
+  .side {
+    height: 4vw;
+  }
+}
+@media (max-width: 600px) {
+  .top {
+    transform: rotateX(-90deg) translate3d(0, 10%, 2em);
+  }
+  .side {
+    min-height: 9vw;
+    width: 20vw;
+    font-size: 2vw;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+  }
+  .cube {
+    width: 20vw;
+    height: 7vw;
+  }
+  .githubicon svg {
+    margin-top: 1.5vw;
+    width: 5vw;
+    height: 5vw;
+  }
+  .githubicon {
+    background-color: #eaefef;
+    margin: auto;
+    padding: 0.5vw;
+  }
+}
 
-  .front {
-    background: #222229;
-    color: #fff;
-    transform: translate3d(0, 0, 1em);
+@media (max-width: 430px) {
+  .side {
+    height: 6.8vw;
   }
-
-  @media (max-width:600px){
-    .top {
-      transform: rotateX(-90deg) translate3d(0, 10%, 2em);
-    }
-    .side {
-      min-height: 9vw;
-      width: 20vw;
-      font-size: 2vw;
-      letter-spacing: 0.5px;
-      font-weight: 400;
-    }
-    .cube {
-      width: 20vw;
-      height: 7vw;
-    }
-    .githubicon svg {
-      margin-top: 1.5vw;
-      width: 5vw;
-      height: 5vw;
-    }
-    .githubicon {
-      background-color: #EAEFEF;
-      margin: auto;
-      padding: 0.5vw;
-    }
+}
+@media (max-width: 390px) {
+  .side {
+    height: 7.2vw;
   }
+}
+@media (max-width: 360px) {
+  .side {
+    height: 7.8vw;
+  }
+}

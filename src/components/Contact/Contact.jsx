@@ -1,12 +1,11 @@
 import React from "react";
-import './Contact.css';
+import "./Contact.css";
 
 function Contact() {
   return (
     <div className="contact">
       <div className="slider">
         <div className="slide-track">
-
           <LinkedIn />
           <Github />
           <Gmail />
@@ -28,7 +27,6 @@ function Contact() {
           <Twitter />
           <Instagram />
           <Discord />
-
         </div>
       </div>
     </div>
@@ -39,7 +37,12 @@ export default Contact;
 const LinkedIn = () => {
   return (
     <div className="slide">
-      <a href="https://www.linkedin.com/in/paulemmanuelcorsino/" className="social-icon slide" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.linkedin.com/in/paulemmanuelcorsino/"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -50,12 +53,17 @@ const LinkedIn = () => {
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 const Github = () => {
   return (
     <div className="slide">
-      <a href="https://github.com/Gengo-bit" className="social-icon slide" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://github.com/Gengo-bit"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -66,30 +74,44 @@ const Github = () => {
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 
 const Gmail = () => {
   return (
     <div className="slide">
-      <a href="mailto:paulcorsino28@gmail.com" className="social-icon slide" target="_blank" rel="noopener noreferrer">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 512 512">
+      <a
+        href="mailto:paulcorsino28@gmail.com"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentcolor"
+          viewBox="0 0 512 512"
+        >
           <path d="M48 64C21.5 64 0 85.5.0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4.0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4.0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3.0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8.0L0 176z"></path>
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 const Google = () => {
   return (
     <div className="slide">
-      <a href="mailto:paulcorsino28@gmail.com" className="social-icon slide" target="_blank" rel="noopener noreferrer">
-          <svg
+      <a
+        href="mailto:paulcorsino28@gmail.com"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
           fill="currentColor"
           viewBox="0 0 24 24"
-          >
+        >
           <path
             d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z"
             fillRule="evenodd"
@@ -98,28 +120,38 @@ const Google = () => {
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 const Facebook = () => {
   return (
     <div className="slide">
-    <a href="https://www.facebook.com/polcowsino/" className="social-icon slide" target="_blank" rel="noopener noreferrer">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
-        fill="currentColor"
-        viewBox="0 0 24 24"
+      <a
+        href="https://www.facebook.com/polcowsino/"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-      </svg>
-    </a>
-  </div>
-  )
-}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+        </svg>
+      </a>
+    </div>
+  );
+};
 const Messenger = () => {
   return (
     <div className="slide">
-      <a href="https://m.me/polcowsino" className="social-icon slide" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://m.me/polcowsino"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           className="h-5 w-5"
           fill="currentColor"
@@ -132,12 +164,17 @@ const Messenger = () => {
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 const Twitter = () => {
   return (
     <div className="slide">
-      <a href="https://x.com/polcorsino" className="social-icon slide" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://x.com/polcorsino"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -148,12 +185,17 @@ const Twitter = () => {
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 const Instagram = () => {
   return (
     <div className="slide">
-      <a href="https://www.instagram.com/polcorsino/" className="social-icon slide" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.instagram.com/polcorsino/"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -164,23 +206,28 @@ const Instagram = () => {
         </svg>
       </a>
     </div>
-  )
-}
+  );
+};
 const Discord = () => {
   return (
     <div className="slide">
-      <a href="https://www.discord.com/ID:662975009383514142" className="social-icon slide" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.discord.com/ID:662975009383514142"
+        className="social-icon slide"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <svg
-            className="h-5 w-5"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-          >
-            <path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
-          </svg>
+          className="h-5 w-5"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fillRule="evenodd"
+          clipRule="evenodd"
+        >
+          <path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+        </svg>
       </a>
     </div>
-  )
-}
+  );
+};

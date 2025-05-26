@@ -1,17 +1,19 @@
-*{
+* {
   margin: 0;
 }
-body{
-  color: #1E201E;
+body {
+  color: #1e201e;
 }
 /* Initial styles for the header */
 header {
-  background-color: #EAEFEF;
+  background-color: #eaefef;
   padding: 2.3rem;
   position: sticky;
   top: 0;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   display: flex;
   justify-content: space-between;
   backdrop-filter: blur(10px);
@@ -36,7 +38,6 @@ header .logo img {
   display: block; /* Remove any unnecessary space below the image */
 }
 
-
 /* Hide default navigation links for mobile */
 header nav ul {
   display: none; /* Hide navigation links on mobile */
@@ -60,7 +61,7 @@ header nav ul {
 }
 
 .desktop-nav ul li a {
-  color: #1E201E;
+  color: #1e201e;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
@@ -141,25 +142,24 @@ header nav ul {
   cursor: pointer;
 }
 #progressBarContainer {
-    position: fixed;
-    z-index: 10;
-    background: rgba(255,255,255,0.05);
-    width: 100%;
-    top: 0;
-    left: 0;
+  position: fixed;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  top: 0;
+  left: 0;
 }
-  
-  
+
 #progressBar {
-    background: linear-gradient(to right, #B8CFCE, #333446);
-    transform-origin: top left;
-    transform: scale(0,0);
-    opacity: 0;
+  background: linear-gradient(to right, #b8cfce, #333446);
+  transform-origin: top left;
+  transform: scale(0, 0);
+  opacity: 0;
 }
 
 #progressBarContainer,
 #progressBar {
-    height: 10px;
+  height: 10px;
 }
 @media (max-width: 768px) {
   header {
