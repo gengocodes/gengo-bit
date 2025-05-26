@@ -163,7 +163,7 @@ header nav ul {
 }
 @media (max-width: 768px) {
   header {
-    padding: 2.5rem 2.5rem 0 2.5rem;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
     position: sticky;
   }
 
@@ -185,7 +185,7 @@ header nav ul {
 }
 @media (max-width: 480px) {
   header {
-    padding: 2.5rem 2.5rem 0 2.5rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 
   header .logo {

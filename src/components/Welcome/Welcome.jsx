@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Welcome.css';
+import paul_pic2 from "../../assets/paul_mob_pic.png";
 import paul_pic from "../../assets/paul-huge-pic.png"
 import GithubButton from "./GithubButton/GithubButton"
 import ResumeButton from "./ResumeButton/ResumeButton";
@@ -12,7 +13,19 @@ function Welcome() {
     const typingSpeed = 300; // Speed of typing in ms
     const deletingSpeed = 150; // Speed of deleting in ms
     const pauseTime = 2000; // Pause before switching text
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth >= 768);
   
+    useEffect(() => {
+      const handleResize = () =>{
+        setIsMobile(window.innerWidth >= 768)
+      };
+
+      window.addEventListener('resize', handleResize);
+
+      return () => window.removeEventListener('resize', handleResize); // Clean-up
+    }, []);
+
     useEffect(() => {
   
       let timeout;
@@ -50,7 +63,8 @@ function Welcome() {
   return (
     <div className="main shapedividers_com-8755">
         <div className="container">
-          <img src={paul_pic} className="paul_pic" alt="paul pic"/>  
+          <img  src={isMobile ? paul_pic : paul_pic2} className="paul_pic" alt="paul pic"/> 
+
           <div className="bg"></div>
           <span className="typing-effect"> {displayedText}</span> 
           <div className="welcome-texts">

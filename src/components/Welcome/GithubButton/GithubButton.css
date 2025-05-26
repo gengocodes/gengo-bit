@@ -57,3 +57,27 @@
     color: #fff;
     transform: translate3d(0, 0, 1em);
   }
+
+  @media (max-width:600px){
+    .side {
+      min-height: 9vw;
+      width: 20vw;
+      font-size: 2vw;
+      letter-spacing: 0.5px;
+      font-weight: 400;
+    }
+    .cube {
+      width: 20vw;
+      height: 7vw;
+    }
+    .githubicon svg {
+      margin-top: 1.5vw;
+      width: 5vw;
+      height: 5vw;
+    }
+    .githubicon {
+      background-color: #EAEFEF;
+      margin: auto;
+      padding: 0.5vw;
+    }
+  }
