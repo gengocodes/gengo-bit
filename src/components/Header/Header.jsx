@@ -40,7 +40,7 @@ function Header({
   });
 
   return (
-    <header>
+    <header className="animate__animated animate__slideInUp">
       <div id="progressBarContainer">
         <div
           id="progressBar"

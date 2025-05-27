@@ -10,7 +10,7 @@ header {
   padding: 2.3rem;
   position: sticky;
   top: 0;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   transition:
     background-color 0.3s ease,
     box-shadow 0.3s ease;
@@ -64,12 +64,12 @@ header nav ul {
   color: #1e201e;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .desktop-nav ul li a:hover {
-  color: #f4c542;
+  color: #7f8caa;
 }
 
 /* Hamburger menu (visible on mobile) */
@@ -146,12 +146,12 @@ header nav ul {
   z-index: 10;
   background: rgba(255, 255, 255, 0.05);
   width: 100%;
-  top: 0;
+  bottom: 0;
   left: 0;
 }
 
 #progressBar {
-  background: linear-gradient(to right, #b8cfce, #333446);
+  background: linear-gradient(to right, #333446, #333446);
   transform-origin: top left;
   transform: scale(0, 0);
   opacity: 0;
@@ -159,7 +159,7 @@ header nav ul {
 
 #progressBarContainer,
 #progressBar {
-  height: 10px;
+  height: 5px;
 }
 @media (max-width: 768px) {
   header {

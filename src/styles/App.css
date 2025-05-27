@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrollbars */
-  background-color: #EAEFEF; /* Fallback background */
-  font-family: 'Poppins', sans-serif; /* Default font for body */
+  background-color: #eaefef; /* Fallback background */
+  font-family: "Poppins", sans-serif; /* Default font for body */
 }
 
 html {
@@ -13,8 +15,8 @@ html {
 section {
   width: 100%;
   position: relative;
-    flex: 1;
-    min-height: 300px; /* Ensure consistent height */
+  flex: 1;
+  min-height: 300px; /* Ensure consistent height */
 }
 
 .wave {
@@ -25,13 +27,10 @@ section {
   transition: transform 0.3s ease-out;
 }
 
-
-
 /* Styling the wave for smoother transitions */
 .wave path {
   transition: all 0.3s ease-out;
 }
-
 
 #about {
   background: #32cd32; /* Green background for the about section */

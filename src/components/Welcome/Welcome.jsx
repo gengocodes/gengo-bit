@@ -2,8 +2,8 @@ import React, { useState, useEffect, useMemo } from "react";
 import "./Welcome.css";
 import paul_pic2 from "../../assets/paul_mob_pic.png";
 import paul_pic from "../../assets/paul-huge-pic.png";
-import GithubButton from "./GithubButton/GithubButton";
-import ResumeButton from "./ResumeButton/ResumeButton";
+// import GithubButton from "./GithubButton/GithubButton";
+// import ResumeButton from "./ResumeButton/ResumeButton";
 import Cursor from "./Cursor/Cursor";
 
 function Welcome() {
@@ -68,7 +68,7 @@ function Welcome() {
 
   return (
     <div className="main shapedividers_com-3035">
-      <div className="container">
+      <div className="container animate__animated animate__slideInUp">
         <Cursor />
         <img
           src={isMobile ? paul_pic : paul_pic2}
@@ -80,7 +80,7 @@ function Welcome() {
         <span className="typing-effect"> {displayedText}</span>
         <div className="welcome-texts">
           <span className="welcome-greetings">
-            HELLO, I'M <span className="welcome-name">PAUL CORSINO</span>
+            Hello, I'm <span className="welcome-name">Paul</span>.
           </span>
           <span className="welcome-desc1">
             I am a <span className="welcome-job">Full-Stack Developer</span>{" "}
@@ -91,8 +91,8 @@ function Welcome() {
             interact with the world and improve it.
           </span>
           <div className="welcome-buttons">
-            <ResumeButton />
-            <GithubButton />
+            {/* <ResumeButton />
+            <GithubButton /> */}
           </div>
         </div>
       </div>

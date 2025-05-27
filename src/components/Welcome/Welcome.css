@@ -33,10 +33,10 @@
   font-weight: 900;
   background: linear-gradient(
     to right,
-    #0e2148 20%,
-    #483aa0 30%,
-    #7965c1 70%,
-    #0e2148 80%
+    #222229 20%,
+    #333446 30%,
+    #7f8caa 70%,
+    #222229 80%
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -50,7 +50,7 @@
     to right,
     #c92116 20%,
     #161e4d 30%,
-    #f6cc15 70%,
+    #161e4d 70%,
     #c92116 80%
   );
   -webkit-background-clip: text;
@@ -62,15 +62,17 @@
 .welcome-greetings {
   font-size: 2vw;
   font-weight: 500;
-  border-bottom: solid 1px #333446;
 }
 .welcome-desc1 {
   font-size: 4vw;
   font-weight: 700;
+  line-height: 5vw;
 }
 .welcome-name {
-  color: #0e2148;
+  color: #eaefef;
   font-weight: 900;
+  background-color: #333446;
+  padding: 0 1.5vw;
 }
 .welcome-catch {
   font-size: 1vw;
@@ -154,7 +156,7 @@
   .paul_pic {
     left: auto;
     right: auto;
-    margin-bottom: -10vw;
+    margin-bottom: -45vw;
     height: 50vh;
   }
   .welcome-texts {
@@ -169,7 +171,6 @@
   .welcome-greetings {
     font-size: 5vw;
     font-weight: 450;
-    border-bottom: solid 0px #333446;
     margin-left: auto;
     margin-right: auto;
   }

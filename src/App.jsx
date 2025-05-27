@@ -8,6 +8,7 @@ import Arrow from "./components/Arrow/Arrow";
 import Welcome from "./components/Welcome/Welcome";
 import Contact from "./components/Contact/Contact";
 import Techstack from "./components/Techstack/Techstack";
+import "animate.css";
 
 function App() {
   const heroSectionRef = useRef(null);
@@ -17,32 +18,28 @@ function App() {
   const welcomeSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
 
-
   return (
     <div className="App">
+      <Arrow />
+      <Header
+        heroSectionRef={heroSectionRef}
+        contactSectionRef={contactSectionRef}
+        aboutSectionRef={aboutSectionRef}
+        skillsSectionRef={skillsSectionRef}
+        projectsSectionRef={projectsSectionRef}
+      />
 
-        <Arrow />
-        <Header
-          heroSectionRef={heroSectionRef}
-          contactSectionRef={contactSectionRef}
-          aboutSectionRef={aboutSectionRef}
-          skillsSectionRef={skillsSectionRef}
-          projectsSectionRef={projectsSectionRef}
-        />
-        
-        <section ref={welcomeSectionRef} id="welcome">
-          <Welcome />
-        </section>
+      <section ref={welcomeSectionRef} id="welcome">
+        <Welcome />
+      </section>
 
- 
+      <Techstack />
 
-        <Techstack />
+      <section ref={heroSectionRef} id="hero">
+        <HeroSection />
+      </section>
 
-        <section ref={heroSectionRef} id="hero">
-          <HeroSection />
-        </section>
-
-        {/* <section ref={aboutSectionRef} id="about">
+      {/* <section ref={aboutSectionRef} id="about">
           <About />
         </section>
 
@@ -50,13 +47,12 @@ function App() {
           <Skills />
         </section> */}
 
-        {/* <section ref={projectsSectionRef} id="projects">
+      {/* <section ref={projectsSectionRef} id="projects">
           <Projects />
         </section> */}
-        <section ref={contactSectionRef} id="contact">
-          <Contact />
-        </section>
-
+      <section ref={contactSectionRef} id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }
