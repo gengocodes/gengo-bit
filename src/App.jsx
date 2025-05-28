@@ -8,6 +8,7 @@ import Arrow from "./components/Arrow/Arrow";
 import Welcome from "./components/Welcome/Welcome";
 import Contact from "./components/Contact/Contact";
 import Techstack from "./components/Techstack/Techstack";
+import Slideshow from "./components/Slideshow/Slideshow";
 import "animate.css";
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
       <section ref={welcomeSectionRef} id="welcome">
         <Welcome />
       </section>
-
+      <Slideshow />
       <Techstack />
 
       <section ref={heroSectionRef} id="hero">

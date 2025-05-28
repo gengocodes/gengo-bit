@@ -80,7 +80,7 @@ function Welcome() {
         <span className="typing-effect"> {displayedText}</span>
         <div className="welcome-texts">
           <span className="welcome-greetings">
-            Hello, I'm <span className="welcome-name">Paul</span>.
+            Hey, I'm <span className="welcome-name">Paul</span>.
           </span>
           <span className="welcome-desc1">
             I am a <span className="welcome-job">Full-Stack Developer</span>{" "}
