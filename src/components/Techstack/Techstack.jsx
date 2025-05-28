@@ -33,7 +33,7 @@ function Techstack() {
   }, []);
 
   return (
-    <div className="techstack-main">
+    <div className="techstack-main shapedividers_com-8355">
       <div className="tech-cont">
         <div className="tech-header"></div>
         <div className="tech-body">
@@ -41,7 +41,7 @@ function Techstack() {
             ref={divRef}
             className={`frontend-cont ${
               isVisible
-                ? "animate__animated animate__lightSpeedInRight"
+                ? "animate__animated animate__fadeInBottomRight"
                 : "hidden-on-load"
             }`}
           >
@@ -213,7 +213,7 @@ function Techstack() {
             ref={divRef}
             className={`backend-cont ${
               isVisible
-                ? "animate__animated animate__lightSpeedInRight"
+                ? "animate__animated animate__fadeInBottomLeft"
                 : "hidden-on-load"
             }`}
           >
@@ -277,7 +277,7 @@ function Techstack() {
             ref={divRef}
             className={`database-cont ${
               isVisible
-                ? "animate__animated animate__lightSpeedInRight"
+                ? "animate__animated animate__fadeInBottomRight"
                 : "hidden-on-load"
             }`}
           >

@@ -9,6 +9,7 @@ import Welcome from "./components/Welcome/Welcome";
 import Contact from "./components/Contact/Contact";
 import Techstack from "./components/Techstack/Techstack";
 import Slideshow from "./components/Slideshow/Slideshow";
+import Slideshow2 from "./components/Slideshow/Slideshow2";
 import "animate.css";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Welcome />
       </section>
       <Slideshow />
+      <Slideshow2 />
       <Techstack />
 
       <section ref={heroSectionRef} id="hero">

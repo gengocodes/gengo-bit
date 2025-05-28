@@ -19,6 +19,8 @@ header {
   backdrop-filter: blur(10px);
   align-items: stretch;
   z-index: 9999;
+  opacity: 93%;
+  backdrop-filter: blur(50px);
 }
 
 /* Logo styles */
