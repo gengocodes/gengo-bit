@@ -10,7 +10,6 @@
   align-items: center;
   background-color: #ffffff;
   background-image: url("../../assets/mooning-1920x1080.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .tech-cont {
   display: flex;

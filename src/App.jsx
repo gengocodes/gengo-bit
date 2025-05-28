@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 // import HeroSection from "./components/HeroSection/HeroSection";
 // import About from "./components/About";
 // import Skills from "./components/Skills";
-// import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/Projects";
 import Header from "./components/Header/Header";
 import Arrow from "./components/Arrow/Arrow";
 import Welcome from "./components/Welcome/Welcome";
@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Techstack from "./components/Techstack/Techstack";
 import Slideshow from "./components/Slideshow/Slideshow";
 import Slideshow2 from "./components/Slideshow/Slideshow2";
+// import Timeline from "./components/Timeline/Timeline";
 import "animate.css";
 
 function App() {
@@ -41,6 +42,10 @@ function App() {
       <section ref={skillsSectionRef} id="skills">
         <Techstack />
       </section>
+      <section ref={projectsSectionRef} id="projects">
+        <Projects />
+      </section>
+      {/* <Timeline /> */}
 
       {/* <section ref={heroSectionRef} id="hero">
         <HeroSection />
@@ -54,9 +59,6 @@ function App() {
           <Skills />
         </section> */}
 
-      {/* <section ref={projectsSectionRef} id="projects">
-          <Projects />
-        </section> */}
       <section ref={contactSectionRef} id="contact">
         <Contact />
       </section>

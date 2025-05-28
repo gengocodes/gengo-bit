@@ -1,251 +1,139 @@
-import React, { useEffect } from 'react';
+import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import "./Projects.css";
-import project1 from "../../assets/projects/project1.jpg"
-import project2 from "../../assets/projects/project2.jpg"
-import project3 from "../../assets/projects/project3.jpg"
-import project4 from "../../assets/projects/project4.jpg"
-import project5 from "../../assets/projects/project5.png"
 
-
-const Projects = () => {
-
-    useEffect(() => {
-        const nextDom = document.getElementById("next");
-        const prevDom = document.getElementById("prev");
-    
-        if (!nextDom || !prevDom) {
-          console.error("Buttons not found in the DOM");
-          return;
-        }
-    
-        const carouselDom = document.querySelector(".carousel");
-        const sliderDom = carouselDom.querySelector(".carousel .list");
-        const thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
-        const thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
-    
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        let timeRunning = 3000;
-        let timeAutoNext = 7000;
-    
-        const showSlider = (type) => {
-          const sliderItemsDom = sliderDom.querySelectorAll(".carousel .list .item");
-          const thumbnailItemsDom = document.querySelectorAll(
-            ".carousel .thumbnail .item"
-          );
-    
-          if (type === "next") {
-            sliderDom.appendChild(sliderItemsDom[0]);
-            thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-            carouselDom.classList.add("next");
-          } else {
-            sliderDom.prepend(sliderItemsDom[sliderItemsDom.length - 1]);
-            thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
-            carouselDom.classList.add("prev");
-          }
-    
-          clearTimeout(runTimeOut);
-          runTimeOut = setTimeout(() => {
-            carouselDom.classList.remove("next");
-            carouselDom.classList.remove("prev");
-          }, timeRunning);
-    
-          clearTimeout(runNextAuto);
-          runNextAuto = setTimeout(() => {
-            nextDom.click();
-          }, timeAutoNext);
-        };
-    
-        nextDom.onclick = () => showSlider("next");
-        prevDom.onclick = () => showSlider("prev");
-    
-        let runTimeOut;
-        let runNextAuto = setTimeout(() => {
-          nextDom.click();
-        }, timeAutoNext);
-    
-        return () => {
-          // Cleanup event listeners
-          nextDom.onclick = null;
-          prevDom.onclick = null;
-          clearTimeout(runTimeOut);
-          clearTimeout(runNextAuto);
-        };
-      }, []); // Run only once after the component mounts
-
-      const Github1 = () => {
-        window.open('https://github.com/Gengo-bit/Septic-Tank-Monitoring-System', '_blank');
-      };
-      const Github2 = () => {
-        window.open('https://github.com/Gengo-bit/IR-Proximity-Sensor-Based-Inventory-Stock-Tracker-Using-PIC-Family-Microcontroller', '_blank');
-      };
-      const Github3 = () => {
-        window.open('https://github.com/Gengo-bit/Image-Classification-of-Fish-Species-Using-the-CIFAR-100-Dataset', '_blank');
-      };
-      const Github4 = () => {
-        window.open('https://github.com/Gengo-bit/Responsive-Web-Design-Projects', '_blank');
-      };
-      const Github5 = () => {
-        window.open('https://github.com/Gengo-bit/Traffic-Flow-Simulation-using-the-Jacobi-Method', '_blank');
-      };
-      const SeeMore1 = () => {
-        window.open('https://septictankmonitoringsystem.netlify.app/', '_blank');
-      };
+function Projects() {
+  const WithStyles = ({ image, headline, description }) => {
+    return (
+      <div className="with-styles-card">
+        <img src={image} alt={headline} className="with-styles-image" />
+        <div className="with-styles-content">
+          <h3>{headline}</h3>
+          <p>{description}</p>
+        </div>
+      </div>
+    );
+  };
 
   return (
-<div className="carousel">
-        <div className="list">
-            <div className="item">
-                <img src={project1} alt=""/>
-                <div className="content">
-                    <div className="author">GENGO-BIT</div>
-                    <div className="title">PROJECT 1</div>
-                    <div className="topic neongreen">SEPTIC TANK MONITORING SYSTEM</div>
-                    <div className="des">
-                    This undergraduate thesis project develops a smart IoT-based septic tank monitoring 
-                    system using ultrasonic sensors, Arduino, ESP32, LoRa, SIM800L GSM, 
-                    Firebase, and a web app for real-time monitoring, predictive analytics, 
-                    SMS alerts, and dynamic visualization.
-                    </div>
-                    <div className="buttons">
-                        <button onClick={Github1}>GITHUB</button>
-                        <button onClick={SeeMore1} className="secondButton">SEE MORE</button>
-                    </div> 
-                </div>
-            </div>
-            <div className="item">
-            <img src={project2} alt=""/>
-                <div className="content">
-                    <div className="author">GENGO-BIT</div>
-                    <div className="title">PROJECT 2</div>
-                    <div className="topic longtopic kobicha">IR PROXIMITY SENSOR-BASED INVENTORY STOCK TRACKER</div>
-                    <div className="des">
-
-                    This Embedded Systems project is an inventory tracking system using a PIC16F877A microcontroller, 
-                    IR sensors, a 3x4 keypad, and a 16x2 LCD for efficient, real-time stock management in small businesses.
-                    </div>
-                    <div className="buttons">
-                        <button onClick={Github2}>GITHUB</button>
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <img src={project3} alt=""/>
-                <div className="content">
-                    <div className="author">GENGO-BIT</div>
-                    <div className="title">PROJECT 3</div>
-                    <div className="topic longtopic neonlightblue">IMAGE CLASSIFICATION OF FISH SPECIES USING THE CIFAR-100 DATASET</div>
-                    <div className="des">
-                    This CPE 3205 project classifies fish species from the CIFAR-100 dataset using transfer learning with 
-                    the VGG16 model, achieving 68%-76% accuracy. It involves image preprocessing with OpenCV and result 
-                    visualization with Matplotlib.
-                    </div>
-                    <div className="buttons">
-                        <button onClick={Github3}>GITHUB</button>
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <img src={project4} alt=""/>
-                <div className="content">
-                    <div className="author">GENGO-BIT</div>
-                    <div className="title">PROJECT 4</div>
-                    <div className="topic neonlightblue">RESPONSIVE WEB DESIGN PROJECTS</div>
-                    <div className="des">
-                    A collection of projects created as part of the Responsive 
-                    Web Design Certification from freeCodeCamp. These projects 
-                    demonstrate fundamental web design skills, including HTML5, 
-                    CSS, and accessibility best practices, with a focus on 
-                    crafting responsive and user-friendly web pages.
-                    </div>
-                    <div className="buttons">
-                        <button onClick={Github4}>GITHUB</button>
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <img src={project5} alt=""/>
-                <div className="content">
-                    <div className="author">GENGO-BIT</div>
-                    <div className="title">PROJECT5</div>
-                    <div className="topic longtopic">TRAFFIC FLOW SIMULATION USING THE JACOBI METHOD</div>
-                    <div className="des">
-                        A Java Swing application for modeling and simulating traffic flow through 
-                        a network of junctions. This project employs the Jacobi Method to iteratively 
-                        solve traffic flow equations, providing a user-friendly interface for educational 
-                        and analytical purposes.
-                    </div>
-                    <div className="buttons">
-                        <button onClick={Github5}>GITHUB</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div className="thumbnail">
-            <div className="item">
-                <img src={project1} alt=""/>
-                <div className="content">
-                    <div className="title">
-                        Project 1
-                    </div>
-                    <div className="description">
-                        Septic Tank Monitoring System
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <img src={project2} alt=""/>
-                <div className="content">
-                    <div className="title">
-                        Project 2
-                    </div>
-                    <div className="description">
-                    IR Proximity Sensor-Based Inventory Stock Tracker
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <img src={project3} alt=""/>
-                <div className="content">
-                    <div className="title">
-                        Project 3
-                    </div>
-                    <div className="description">
-                        Image Classification of Fish Species Using the CIFAR-100 Dataset
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <img src={project4} alt=""/>
-                <div className="content">
-                    <div className="title">
-                        Project 4
-                    </div>
-                    <div className="description">
-                        Responsive Web Design Projects
-                    </div>
-                </div>
-            </div>
-            <div className="item">
-                <img src={project5} alt=""/>
-                <div className="content">
-                    <div className="title">
-                        Project 5
-                    </div>
-                    <div className="description">
-                        Traffic Flow Simulation using the Jacobi Method
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div className="arrows">
-            <button id="prev">&lt;</button>
-            <button id="next">&gt;</button>
-        </div>
-        <div className="time"></div>
-</div>
-  )
+    <div className="projects-cont">
+      <Carousel
+        additionalTransfrom={0}
+        arrows
+        autoPlaySpeed={3000}
+        centerMode={false}
+        className=""
+        containerClass="container-with-dots"
+        dotListClass=""
+        draggable
+        focusOnSelect={false}
+        infinite
+        itemClass=""
+        keyBoardControl
+        minimumTouchDrag={80}
+        pauseOnHover
+        renderArrowsWhenDisabled={false}
+        renderButtonGroupOutside={false}
+        renderDotsOutside={false}
+        responsive={{
+          desktop: {
+            breakpoint: {
+              max: 3000,
+              min: 1024,
+            },
+            items: 3,
+            partialVisibilityGutter: 40,
+          },
+          mobile: {
+            breakpoint: {
+              max: 464,
+              min: 0,
+            },
+            items: 1,
+            partialVisibilityGutter: 30,
+          },
+          tablet: {
+            breakpoint: {
+              max: 1024,
+              min: 464,
+            },
+            items: 2,
+            partialVisibilityGutter: 30,
+          },
+        }}
+        rewind={false}
+        rewindWithAnimation={false}
+        rtl={false}
+        shouldResetAutoplay
+        showDots={false}
+        sliderClass=""
+        slidesToSlide={1}
+        swipeable
+      >
+        <WithStyles
+          description="Fixing CSS load order/style.chunk.css incorrect in Nextjs"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1549989476-69a92fa57c36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="React Carousel with Server Side Rendering Support – Part 1"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1549396535-c11d5c55b9df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="React Carousel with Server Side Rendering Support – Part 2"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1550133730-695473e544be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="Fixing CSS load order/style.chunk.css incorrect in Nextjs"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1550167164-1b67c2be3973?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="React Carousel with Server Side Rendering Support – Part 1"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1550338861-b7cfeaf8ffd8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="Appending currency sign to a purchase form in your e-commerce site using plain JavaScript."
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1550223640-23097fc71cb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="React Carousel with Server Side Rendering Support – Part 1"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1550353175-a3611868086b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="Appending currency sign to a purchase form in your e-commerce site using plain JavaScript."
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1550330039-a54e15ed9d33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="Fixing CSS load order/style.chunk.css incorrect in Nextjs"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1549737328-8b9f3252b927?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="React Carousel with Server Side Rendering Support – Part 2"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1549833284-6a7df91c1f65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="Fixing CSS load order/style.chunk.css incorrect in Nextjs"
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1549985908-597a09ef0a7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+        <WithStyles
+          description="Appending currency sign to a purchase form in your e-commerce site using plain JavaScript."
+          headline="w3js.com - web front-end studio"
+          image="https://images.unsplash.com/photo-1550064824-8f993041ffd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+        />
+      </Carousel>
+    </div>
+  );
 }
 
 export default Projects;
