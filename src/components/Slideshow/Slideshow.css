@@ -28,7 +28,7 @@
   height: 250px;
   margin: auto;
   position: relative;
-  width: 90%;
+  width: 100%;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -82,13 +82,13 @@
 .ss-slider::after {
   background: linear-gradient(
     to right,
-    rgba(34, 34, 41, 1) 0%,
+    rgba(34, 34, 41, 1) 5%,
     rgba(255, 255, 255, 0) 100%
   );
   content: "";
   height: 100%;
   position: absolute;
-  width: 15%;
+  width: 30%;
   z-index: 999;
 }
 .ss-slider::before {
