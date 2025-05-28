@@ -3,7 +3,7 @@ import "./Header.css";
 import Logo from "../../assets/Logo.png";
 
 function Header({
-  heroSectionRef,
+  homeSectionRef,
   aboutSectionRef,
   skillsSectionRef,
   projectsSectionRef,
@@ -63,15 +63,17 @@ function Header({
         </button>
         <ul className="side-panel-links">
           <li>
-            <a href="#hero" onClick={() => handleScrollTo(heroSectionRef)}>
+            <a href="#hero" onClick={() => handleScrollTo(homeSectionRef)}>
               Home
             </a>
           </li>
           <li>
-            <a
-              href="#contact"
-              onClick={() => handleScrollTo(contactSectionRef)}
-            >
+            <a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>
               Contact
             </a>
           </li>
@@ -80,11 +82,7 @@ function Header({
               About
             </a>
           </li>
-          <li>
-            <a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>
-              Skills
-            </a>
-          </li>
+
           <li>
             <a
               href="#projects"
@@ -99,8 +97,13 @@ function Header({
       <nav className="desktop-nav">
         <ul>
           <li>
-            <a href="#hero" onClick={() => handleScrollTo(heroSectionRef)}>
+            <a href="#hero" onClick={() => handleScrollTo(homeSectionRef)}>
               Home
+            </a>
+          </li>
+          <li>
+            <a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>
+              Skills
             </a>
           </li>
           <li>
@@ -116,11 +119,7 @@ function Header({
               About
             </a>
           </li>
-          <li>
-            <a href="#skills" onClick={() => handleScrollTo(skillsSectionRef)}>
-              Skills
-            </a>
-          </li>
+
           <li>
             <a
               href="#projects"

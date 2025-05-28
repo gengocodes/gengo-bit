@@ -136,6 +136,7 @@
   width: 100vw;
   background-color: #ffffff;
   background-image: url("../../assets/graphy.png");
+  bottom: 0;
 }
 
 @media (max-width: 1280px) {
@@ -156,8 +157,8 @@
   .paul_pic {
     left: auto;
     right: auto;
-    margin-bottom: -45vw;
-    height: 50vh;
+    margin-bottom: -40vw;
+    height: 45vh;
   }
   .welcome-texts {
     margin-top: 0;
@@ -211,7 +212,7 @@
     position: fixed;
     margin-left: -20vw;
     bottom: 0;
-    margin-bottom: -30vw;
+    margin-bottom: -70vw;
     font-size: 50vh;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import HeroSection from "./components/HeroSection/HeroSection";
+// import HeroSection from "./components/HeroSection/HeroSection";
 // import About from "./components/About";
 // import Skills from "./components/Skills";
 // import Projects from "./components/Projects/Projects";
@@ -13,34 +13,38 @@ import Slideshow2 from "./components/Slideshow/Slideshow2";
 import "animate.css";
 
 function App() {
-  const heroSectionRef = useRef(null);
+  // const heroSectionRef = useRef(null);
   const aboutSectionRef = useRef(null);
-  const skillsSectionRef = useRef(null);
+
   const projectsSectionRef = useRef(null);
-  const welcomeSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
+  const homeSectionRef = useRef(null);
+  const skillsSectionRef = useRef(null);
 
   return (
     <div className="App">
       <Arrow />
       <Header
-        heroSectionRef={heroSectionRef}
+        // heroSectionRef={heroSectionRef}
+        homeSectionRef={homeSectionRef}
         contactSectionRef={contactSectionRef}
         aboutSectionRef={aboutSectionRef}
         skillsSectionRef={skillsSectionRef}
         projectsSectionRef={projectsSectionRef}
       />
 
-      <section ref={welcomeSectionRef} id="welcome">
+      <section ref={homeSectionRef} id="home">
         <Welcome />
       </section>
       <Slideshow />
       <Slideshow2 />
-      <Techstack />
-
-      <section ref={heroSectionRef} id="hero">
-        <HeroSection />
+      <section ref={skillsSectionRef} id="skills">
+        <Techstack />
       </section>
+
+      {/* <section ref={heroSectionRef} id="hero">
+        <HeroSection />
+      </section> */}
 
       {/* <section ref={aboutSectionRef} id="about">
           <About />
