@@ -1,7 +1,9 @@
-.projects {
-  margin-bottom: 10vh;
+.projects-main {
+  height: 1100px;
+  width: 100vw;
+  background-color: #ffffff;
+  background-image: url("../../assets/mooning-1920x1080.png");
 }
-
 .shapedividers_com-9980 {
   overflow: hidden;
   position: relative;

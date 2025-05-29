@@ -11,6 +11,8 @@
     "@mui/material": "^6.4.1",
     "animate.css": "^4.1.1",
     "cra-template": "1.2.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "gsap": "^3.13.0",
     "motion": "^12.14.0",
     "react": "^18.3.1",

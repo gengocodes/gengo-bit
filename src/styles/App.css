@@ -31,15 +31,3 @@ section {
 .wave path {
   transition: all 0.3s ease-out;
 }
-
-#about {
-  background: #32cd32; /* Green background for the about section */
-}
-
-#skills {
-  background: #8a2be2; /* Purple for the skills section */
-}
-
-#projects {
-  background: #f0e68c; /* Light yellow for the projects section */
-}

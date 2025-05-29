@@ -32,6 +32,8 @@ function Techstack() {
   const [ref4, isVisible4] = useVisibilityObserver();
   const [ref5, isVisible5] = useVisibilityObserver();
   const [ref6, isVisible6] = useVisibilityObserver();
+  const [ref7, isVisible7] = useVisibilityObserver();
+  const [ref8, isVisible8] = useVisibilityObserver();
 
   return (
     <div className="techstack-main shapedividers_com-8355">
@@ -177,9 +179,9 @@ function Techstack() {
             </div>
           </div>
           <div
-            ref={ref4}
+            ref={ref6}
             className={`tech-stack-title ${
-              isVisible4
+              isVisible6
                 ? "animate__animated animate__slideInLeft"
                 : "hidden-on-load"
             }`}
@@ -187,9 +189,9 @@ function Techstack() {
             <span className="tech-stack-txt">Other Technologies</span>
           </div>
           <div
-            ref={ref5}
+            ref={ref7}
             className={`logos-cont ${
-              isVisible5
+              isVisible7
                 ? "animate__animated animate__fadeInBottomRight"
                 : "hidden-on-load"
             }`}
@@ -228,9 +230,9 @@ function Techstack() {
               </a>
             </div>
             <div
-              ref={ref6}
+              ref={ref8}
               className={`logos-cont ${
-                isVisible6
+                isVisible8
                   ? "animate__animated animate__fadeInBottomRight"
                   : "hidden-on-load"
               }`}
