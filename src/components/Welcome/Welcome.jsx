@@ -1,12 +1,18 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useRef } from "react";
 import "./Welcome.css";
 import paul_pic2 from "../../assets/paul_mob_pic.png";
 import paul_pic from "../../assets/paul-huge-pic.png";
 // import GithubButton from "./GithubButton/GithubButton";
 // import ResumeButton from "./ResumeButton/ResumeButton";
 import Cursor from "./Cursor/Cursor";
+import Header from "../Header/Header";
 
 function Welcome() {
+  const experienceSectionRef = useRef(null);
+  const skillsSectionRef = useRef(null);
+  const projectsSectionRef = useRef(null);
+  const contactSectionRef = useRef(null);
+
   const [displayedText, setDisplayedText] = useState(""); // Text being displayed
   const [isTyping, setIsTyping] = useState(true); // Whether typing or deleting
   const [currentTextIndex, setCurrentTextIndex] = useState(0); // Index of current text
@@ -69,6 +75,12 @@ function Welcome() {
   return (
     <div className="main shapedividers_com-5316">
       <div className="container animate__animated animate__slideInUp">
+        <Header
+          experienceSectionRef={experienceSectionRef}
+          skillsSectionRef={skillsSectionRef}
+          projectsSectionRef={projectsSectionRef}
+          contactSectionRef={contactSectionRef}
+        />
         <Cursor />
         <img
           src={isMobile ? paul_pic : paul_pic2}
@@ -78,23 +90,33 @@ function Welcome() {
 
         <div className="bg"></div>
         <span className="typing-effect"> {displayedText}</span>
-        <div className="welcome-texts">
-          <span className="welcome-greetings">
-            Hey, I'm <span className="welcome-name">Paul</span>.
-          </span>
-          <span className="welcome-desc1">
-            I am a <span className="welcome-job">Full-Stack Developer</span>{" "}
-            from the <span className="ph">Philippines</span>
-          </span>
-          <span className="welcome-catch">
-            I don't just write code or wire circuits — I craft systems that
-            interact with the world and improve it.
-          </span>
-          <div className="welcome-buttons">
-            {/* <ResumeButton />
-            <GithubButton /> */}
+        <div className="cont1"></div>
+        <div className="cont2">
+          <div className="cont2-1"></div>
+          <div className="cont2-2">
+            <div className="txt-cont1">
+              {" "}
+              <span className="welcome-greetings">
+                Hey, I'm <span className="welcome-name">Paul</span>.
+              </span>
+            </div>
+            <div className="txt-cont2">
+              <span className="welcome-desc1">
+                I am a <span className="welcome-job">Full-Stack Developer</span>
+                <br />
+                from the <span className="ph">Philippines</span>
+                <br />
+              </span>
+              <span className="welcome-catch">
+                I don't just write code or wire circuits — I craft systems that
+                interact with the world and improve it.
+              </span>
+            </div>
+            <div className="txt-cont3"> </div>
           </div>
+          <div className="cont2-3"></div>{" "}
         </div>
+        <div className="cont3"></div>
       </div>
     </div>
   );

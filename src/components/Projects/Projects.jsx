@@ -10,6 +10,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
 function Projects() {
   const [ref1, isVisible1] = useVisibilityObserver();
+  const [ref2, isVisible2] = useVisibilityObserver();
   return (
     <div className="projects-main animate__animated animate__slideInUp">
       <div className="projects-div1">
@@ -26,7 +27,14 @@ function Projects() {
           </h1>
         </div>
       </div>
-      <div className="projects-div2">
+      <div
+        ref={ref2}
+        className={`projects-div2 ${
+          isVisible2
+            ? "animate__animated animate__slideInRight"
+            : "hidden-on-load"
+        }`}
+      >
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
     </div>

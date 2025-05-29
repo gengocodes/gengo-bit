@@ -48,7 +48,7 @@
 }
 .ss-slide img {
   width: 100%;
-  box-shadow: 0px 0px 12px #b8cfce;
+  box-shadow: 0px 0px 12px #7f8caa;
 }
 .ss-slide img:hover {
   transform: translateZ(8px);
@@ -82,13 +82,13 @@
 .ss-slider::after {
   background: linear-gradient(
     to right,
-    rgba(34, 34, 41, 1) 5%,
+    rgba(34, 34, 41, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
   content: "";
   height: 100%;
   position: absolute;
-  width: 30%;
+  width: 20%;
   z-index: 999;
 }
 .ss-slider::before {
