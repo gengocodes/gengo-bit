@@ -16,6 +16,10 @@
   height: 10%;
   width: 100%;
 }
+.projects-div1 .projects-title:hover {
+  color: white;
+  background-color: #222229;
+}
 .projects-div1 .projects-title {
   padding: 0 40px;
   color: #222229;

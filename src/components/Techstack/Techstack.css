@@ -82,6 +82,13 @@
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+.tech-stack-title:hover {
+  background-color: #222229;
+}
+.tech-stack-txt:hover {
+  color: white;
+  background-color: #222229;
+}
 .tech-stack-txt {
   font-size: 2em;
   font-weight: 500;
