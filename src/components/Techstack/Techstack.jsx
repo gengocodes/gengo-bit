@@ -29,7 +29,7 @@ function Techstack() {
   const [ref1, isVisible1] = useVisibilityObserver();
   const [ref2, isVisible2] = useVisibilityObserver();
   const [ref3, isVisible3] = useVisibilityObserver();
-  const [ref4, isVisible4] = useVisibilityObserver();
+  // const [ref4, isVisible4] = useVisibilityObserver();
   const [ref5, isVisible5] = useVisibilityObserver();
   const [ref6, isVisible6] = useVisibilityObserver();
   const [ref7, isVisible7] = useVisibilityObserver();
@@ -132,16 +132,6 @@ function Techstack() {
                 <img src={nextjs} className="tech-logo" alt="" />
               </a>
             </div>
-          </div>
-          <div
-            ref={ref4}
-            className={`tech-stack-title ${
-              isVisible4
-                ? "animate__animated animate__slideInLeft"
-                : "hidden-on-load"
-            }`}
-          >
-            <span className="tech-stack-txt">Database and Storage</span>
           </div>
           <div
             ref={ref5}

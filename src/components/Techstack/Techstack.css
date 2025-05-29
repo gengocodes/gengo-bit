@@ -10,6 +10,7 @@
   align-items: center;
   background-color: #ffffff;
   background-image: url("../../assets/mooning-1920x1080.png");
+  margin-bottom: -50px;
 }
 .tech-cont {
   display: flex;

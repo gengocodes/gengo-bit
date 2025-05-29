@@ -1,8 +1,32 @@
 .projects-main {
-  height: 1100px;
+  height: 1200px;
   width: 100vw;
   background-color: #ffffff;
   background-image: url("../../assets/mooning-1920x1080.png");
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.projects-div1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 10%;
+  width: 100%;
+}
+.projects-div1 .projects-title {
+  background-color: #333446;
+  padding: 0 40px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.projects-div2 {
+  height: 90%;
+  width: 100%;
 }
 .shapedividers_com-9980 {
   overflow: hidden;

@@ -58,6 +58,7 @@ const EmblaCarousel = (props) => {
           </div>
         </div>
       </div>
+      <div className="thumbs-closer"></div>
     </div>
   );
 };
