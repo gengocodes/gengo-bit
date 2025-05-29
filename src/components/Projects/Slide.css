@@ -119,9 +119,9 @@
   color: white;
 }
 .firebase:hover {
-  background-color: #ffa611;
+  background-color: #ffcb2b;
   border-color: #f5820d;
-  color: white;
+  color: black;
 }
 .react:hover {
   background-color: #00dbff;
@@ -134,4 +134,23 @@
 .mongodb:hover {
   background-color: #00ed64;
   border-color: #00684a;
+}
+.json:hover {
+  background-color: #818300;
+  border-color: #534b00;
+  color: white;
+}
+.api:hover {
+  background-color: #830000;
+  border-color: #530000;
+  color: white;
+}
+.tensorflow:hover {
+  background-color: #ffa800;
+  border-color: #ff6f00;
+  color: white;
+}
+.python:hover {
+  background-color: #ffd43b;
+  border-color: #306998;
 }
