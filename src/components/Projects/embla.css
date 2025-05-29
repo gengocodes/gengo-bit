@@ -79,9 +79,6 @@
   justify-content: center;
   height: var(--thumbs-slide-height);
   width: 100%;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .embla-thumbs__slide--selected .embla-thumbs__slide__number {
   color: #222229;
@@ -94,4 +91,10 @@
     rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+@media (max-width: 600px) {
+  .embla-thumbs__slide__number {
+    font-size: 1.5rem;
+    height: 3rem;
+  }
 }
