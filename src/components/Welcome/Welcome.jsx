@@ -2,8 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from "react";
 import "./Welcome.css";
 import paul_pic2 from "../../assets/paul_mob_pic.png";
 import paul_pic from "../../assets/paul-huge-pic.png";
-// import GithubButton from "./GithubButton/GithubButton";
-// import ResumeButton from "./ResumeButton/ResumeButton";
+
 import Cursor from "./Cursor/Cursor";
 import Header from "../Header/Header";
 

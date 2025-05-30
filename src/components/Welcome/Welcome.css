@@ -351,8 +351,9 @@
     margin-top: 5px;
     font-size: 0.8rem;
     font-weight: 350;
-    text-align: center;
+    text-align: justify;
     line-height: 1rem;
+    width: 60%;
   }
   .container .typing-effect {
     position: fixed;

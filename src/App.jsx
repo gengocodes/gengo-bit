@@ -6,7 +6,7 @@ import Contact from "./components/Contact/Contact";
 import Techstack from "./components/Techstack/Techstack";
 import Slideshow from "./components/Slideshow/Slideshow";
 import Slideshow2 from "./components/Slideshow/Slideshow2";
-// import Timeline from "./components/Timeline/Timeline";
+import Timeline from "./components/Timeline/Timeline";
 import "animate.css";
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
       <section ref={projectsSectionRef} id="projects">
         <Projects />
       </section>
+      <Timeline />
       <section ref={contactSectionRef} id="contact">
         <Contact />
       </section>

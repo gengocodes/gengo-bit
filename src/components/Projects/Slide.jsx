@@ -17,7 +17,8 @@ const Slide = ({ index }) => {
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
-            {" "}
+            <div className="shadow-overlay"></div>
+            <div className="shadow-overlay"></div>
             <img
               src={project1}
               alt={`Slide ${index + 1}`}
@@ -47,7 +48,7 @@ const Slide = ({ index }) => {
                 <GitHubIcon />
                 <p className="first">View Source Code</p>
               </div>
-              <div className="website-cont first">
+              <div className="website-cont first ">
                 <NorthWestIcon />
                 <p className="first">View Website</p>
               </div>
@@ -61,7 +62,8 @@ const Slide = ({ index }) => {
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
-            {" "}
+            <div className="shadow-overlay"></div>
+            <div className="shadow-overlay"></div>{" "}
             <img
               src={project2}
               alt={`Slide ${index + 1}`}
@@ -107,7 +109,8 @@ const Slide = ({ index }) => {
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
-            {" "}
+            <div className="shadow-overlay"></div>
+            <div className="shadow-overlay"></div>{" "}
             <img
               src={project3}
               alt={`Slide ${index + 1}`}
@@ -152,7 +155,8 @@ const Slide = ({ index }) => {
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
-            {" "}
+            <div className="shadow-overlay"></div>
+            <div className="shadow-overlay"></div>{" "}
             <img
               src={project4}
               alt={`Slide ${index + 1}`}
@@ -190,7 +194,8 @@ const Slide = ({ index }) => {
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
-            {" "}
+            <div className="shadow-overlay"></div>
+            <div className="shadow-overlay"></div>{" "}
             <img
               src={project5}
               alt={`Slide ${index + 1}`}

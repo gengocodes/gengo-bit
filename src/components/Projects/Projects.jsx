@@ -3,7 +3,7 @@ import EmblaCarousel from "./EmblaCarousel";
 import { useVisibilityObserver } from "../useVisibilityObserver";
 import "./Projects.css";
 import "./embla.css";
-
+import { Tooltip } from "react-tooltip";
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 10;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
@@ -12,7 +12,7 @@ function Projects() {
   const [ref1, isVisible1] = useVisibilityObserver();
   const [ref2, isVisible2] = useVisibilityObserver();
   return (
-    <div className="projects-main animate__animated animate__slideInUp">
+    <div className="projects-main animate__animated animate__slideInUp shapedividers_com-3058">
       <div className="projects-div1">
         <div>
           <h1
