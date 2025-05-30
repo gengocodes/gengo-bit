@@ -73,7 +73,7 @@ function Welcome() {
   }, [displayedText, isTyping, currentTextIndex, fullTexts]); // Dependencies to trigger effect
 
   return (
-    <div className="main shapedividers_com-5316">
+    <div className="main shapedividers_com-2747">
       <div className="container animate__animated animate__slideInUp">
         <Header
           experienceSectionRef={experienceSectionRef}

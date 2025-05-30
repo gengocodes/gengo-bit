@@ -36,7 +36,7 @@ function Techstack() {
   const [ref8, isVisible8] = useVisibilityObserver();
 
   return (
-    <div className="techstack-main shapedividers_com-8355">
+    <div className="techstack-main shapedividers_com-2079">
       <div className="tech-cont">
         <div className="tech-header"></div>
         <div className="tech-body">
