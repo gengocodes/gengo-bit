@@ -4,7 +4,7 @@ import "./Contact.css";
 function Contact() {
   return (
     <div className="contact shapedividers_com-6715">
-      <div> test</div>
+      <div className="cont1"></div>
     </div>
   );
 }

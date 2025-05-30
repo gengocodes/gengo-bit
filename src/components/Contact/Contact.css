@@ -1,6 +1,8 @@
 .contact {
   height: 50vh;
   width: 100vw;
+  background-color: #222229;
+  background-image: url("../../assets/mooning-1920x1080.png");
 }
 .shapedividers_com-4401 {
   overflow: hidden;

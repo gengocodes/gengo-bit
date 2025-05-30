@@ -3,7 +3,7 @@ import EmblaCarousel from "./EmblaCarousel";
 import { useVisibilityObserver } from "../useVisibilityObserver";
 import "./Projects.css";
 import "./embla.css";
-import { Tooltip } from "react-tooltip";
+
 const OPTIONS = { loop: true };
 const SLIDE_COUNT = 10;
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
