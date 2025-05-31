@@ -19,13 +19,11 @@ html {
 }
 
 #skills {
-  margin-top: -120px;
   position: relative;
   z-index: 8;
   background-image: url("./assets/mooning-1920x1080.png");
 }
 #slideshow {
-  margin-top: 100vh;
   position: relative;
   background-color: transparent;
   z-index: 9;
@@ -33,25 +31,14 @@ html {
 #projects {
   position: relative;
   z-index: 10;
-  margin-bottom: 48vh;
+  margin-bottom: -150px;
 }
 #timeline {
   position: relative;
   z-index: 11;
 }
-.ghost {
-  background-image: url("./assets/mooning-1920x1080.png");
-  height: 95vh;
-  z-index: 0;
-}
-.ghost2 {
-  background-image: url("./assets/mooning-1920x1080.png");
-  height: 130px;
-}
-
 @media (max-width: 600px) {
   #slideshow {
     width: 100vw;
-    margin-top: 130vh;
   }
 }

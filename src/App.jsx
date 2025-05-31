@@ -29,22 +29,18 @@ function App() {
           </Parallax>
         </section>
 
-        <Parallax speed={-70}>
-          <section id="slideshow">
-            <Slideshow />
-            <Slideshow2 />
-          </section>
+        <section id="slideshow">
+          <Slideshow />
+          <Slideshow2 />
+        </section>
 
-          <section className="ghost2"></section>
+        <section ref={skillsSectionRef} id="skills">
+          <Techstack />
+        </section>
 
-          <section ref={skillsSectionRef} id="skills">
-            <Techstack />
-          </section>
-
-          <section ref={projectsSectionRef} id="projects">
-            <Projects />
-          </section>
-        </Parallax>
+        <section ref={projectsSectionRef} id="projects">
+          <Projects />
+        </section>
 
         <section ref={experienceSectionRef} id="timeline">
           <Timeline />
