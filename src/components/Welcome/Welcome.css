@@ -286,7 +286,7 @@
     height: 100%;
   }
   .cont2-1 {
-    height: 5%;
+    height: 10%;
     width: 100%;
   }
   .cont2-2 {
@@ -298,7 +298,7 @@
     align-items: flex-start;
   }
   .cont2-3 {
-    height: 60%;
+    height: 50%;
     width: 100%;
   }
   .txt-cont1 {
@@ -333,7 +333,7 @@
   .welcome-greetings {
     font-size: 1.3rem;
     font-weight: 450;
-    line-height: 1rem;
+    line-height: 0.3rem;
   }
   .welcome-name {
     font-weight: 550;

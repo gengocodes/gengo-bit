@@ -52,7 +52,7 @@ html {
 
 @media (max-width: 600px) {
   #home {
-    margin-bottom: 120vh;
+    margin-bottom: 130vh;
   }
   #slideshow {
     width: 110vw;
