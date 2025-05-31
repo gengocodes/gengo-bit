@@ -32,6 +32,10 @@ html {
   position: relative;
   z-index: 10;
 }
+#timeline {
+  position: relative;
+  z-index: 11;
+}
 .ghost {
   background-image: url("../assets/mooning-1920x1080.png");
   height: 95vh;

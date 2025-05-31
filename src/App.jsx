@@ -16,6 +16,7 @@ function App() {
   const contactSectionRef = useRef(null);
   const homeSectionRef = useRef(null);
   const skillsSectionRef = useRef(null);
+  const experienceSectionRef = useRef(null);
 
   return (
     <ParallaxProvider>
@@ -23,7 +24,7 @@ function App() {
         <Arrow />
 
         <section ref={homeSectionRef} id="home" className="firstSec">
-          <Parallax speed={-50}>
+          <Parallax speed={-30}>
             <Welcome />
             <div className="blue"></div>
           </Parallax>
@@ -42,8 +43,10 @@ function App() {
         <section ref={projectsSectionRef} id="projects">
           <Projects />
         </section>
+        <section ref={experienceSectionRef} id="timeline">
+          <Timeline />
+        </section>
 
-        <Timeline />
         <section ref={contactSectionRef} id="contact">
           <Contact />
         </section>
