@@ -19,38 +19,42 @@ function App() {
   const experienceSectionRef = useRef(null);
 
   return (
-    <ParallaxProvider>
-      <div className="App">
-        <Arrow />
+    <div className="App">
+      <Arrow />
 
+      <ParallaxProvider>
         <section ref={homeSectionRef} id="home">
           <Parallax speed={-100}>
             <Welcome />
           </Parallax>
         </section>
 
-        <section id="slideshow">
-          <Slideshow />
-          <Slideshow2 />
-        </section>
-        <section className="ghost2"></section>
+        <Parallax speed={-70}>
+          <section id="slideshow">
+            <Slideshow />
+            <Slideshow2 />
+          </section>
 
-        <section ref={skillsSectionRef} id="skills">
-          <Techstack />
-        </section>
+          <section className="ghost2"></section>
 
-        <section ref={projectsSectionRef} id="projects">
-          <Projects />
-        </section>
+          <section ref={skillsSectionRef} id="skills">
+            <Techstack />
+          </section>
+
+          <section ref={projectsSectionRef} id="projects">
+            <Projects />
+          </section>
+        </Parallax>
 
         <section ref={experienceSectionRef} id="timeline">
           <Timeline />
         </section>
+
         <section ref={contactSectionRef} id="contact">
           <Contact />
         </section>
-      </div>
-    </ParallaxProvider>
+      </ParallaxProvider>
+    </div>
   );
 }
 

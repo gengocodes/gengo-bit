@@ -9,10 +9,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.App {
+  background-image: url("./assets/mooning-1920x1080.png");
+}
 
 #home {
   position: relative;
-  z-index: 5;
+  z-index: 0;
+  margin-bottom: 95vh;
 }
 
 #skills {
@@ -30,6 +34,7 @@ html {
 #projects {
   position: relative;
   z-index: 10;
+  margin-bottom: 48vh;
 }
 #timeline {
   position: relative;
@@ -44,6 +49,7 @@ html {
   background-image: url("./assets/mooning-1920x1080.png");
   height: 130px;
 }
+
 @media (max-width: 600px) {
   #slideshow {
     margin-top: -3vw;

@@ -12,7 +12,7 @@ function Projects() {
   const [ref1, isVisible1] = useVisibilityObserver();
   const [ref2, isVisible2] = useVisibilityObserver();
   return (
-    <div className="projects-main animate__animated animate__slideInUp shapedividers_com-3058">
+    <div className="projects-main animate__animated animate__slideInUp ">
       <div className="projects-div1">
         <div>
           <h1
