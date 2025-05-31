@@ -51,7 +51,10 @@ html {
 }
 
 @media (max-width: 600px) {
+  #home {
+    margin-bottom: 120vh;
+  }
   #slideshow {
-    margin-top: -3vw;
+    width: 110vw;
   }
 }
