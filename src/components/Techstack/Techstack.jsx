@@ -25,6 +25,9 @@ import figma from "./logos/figma.svg";
 import photoshop from "./logos/adobe-photoshop.svg";
 import wordpress from "./logos/wordpress-icon-alt.svg";
 
+import Slideshow from "../Slideshow/Slideshow";
+import Slideshow2 from "../Slideshow/Slideshow2";
+
 function Techstack() {
   const [ref1, isVisible1] = useVisibilityObserver();
   const [ref2, isVisible2] = useVisibilityObserver();
@@ -36,7 +39,7 @@ function Techstack() {
   const [ref8, isVisible8] = useVisibilityObserver();
 
   return (
-    <div className="techstack-main shapedividers_com-2079">
+    <div className="techstack-main">
       <div className="tech-cont">
         <div className="tech-header"></div>
         <div className="tech-body">

@@ -72,8 +72,8 @@ function Welcome() {
   }, [displayedText, isTyping, currentTextIndex, fullTexts]); // Dependencies to trigger effect
 
   return (
-    <div className="main shapedividers_com-2747">
-      <div className="container animate__animated animate__slideInUp">
+    <div className="main">
+      <div className="container animate__animated animate__slideInUp ">
         <Header
           experienceSectionRef={experienceSectionRef}
           skillsSectionRef={skillsSectionRef}
@@ -86,7 +86,6 @@ function Welcome() {
           className="paul_pic"
           alt="paul pic"
         />
-
         <div className="bg"></div>
         <span className="typing-effect"> {displayedText}</span>
         <div className="cont1"></div>

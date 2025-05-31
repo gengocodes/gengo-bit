@@ -7,7 +7,9 @@ import Techstack from "./components/Techstack/Techstack";
 import Slideshow from "./components/Slideshow/Slideshow";
 import Slideshow2 from "./components/Slideshow/Slideshow2";
 import Timeline from "./components/Timeline/Timeline";
+import "./styles/App.css";
 import "animate.css";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
 function App() {
   const projectsSectionRef = useRef(null);
@@ -16,24 +18,37 @@ function App() {
   const skillsSectionRef = useRef(null);
 
   return (
-    <div className="App">
-      <Arrow />
-      <section ref={homeSectionRef} id="home">
-        <Welcome />
-      </section>
-      <Slideshow />
-      <Slideshow2 />
-      <section ref={skillsSectionRef} id="skills">
-        <Techstack />
-      </section>
-      <section ref={projectsSectionRef} id="projects">
-        <Projects />
-      </section>
-      <Timeline />
-      <section ref={contactSectionRef} id="contact">
-        <Contact />
-      </section>
-    </div>
+    <ParallaxProvider>
+      <div className="App">
+        <Arrow />
+
+        <section ref={homeSectionRef} id="home" className="firstSec">
+          <Parallax speed={-50}>
+            <Welcome />
+            <div className="blue"></div>
+          </Parallax>
+        </section>
+
+        <section className="ghost"></section>
+        <section id="slideshow">
+          <Slideshow />
+          <Slideshow2 />
+        </section>
+        <section className="ghost2"></section>
+
+        <section ref={skillsSectionRef} id="skills">
+          <Techstack />
+        </section>
+        <section ref={projectsSectionRef} id="projects">
+          <Projects />
+        </section>
+
+        <Timeline />
+        <section ref={contactSectionRef} id="contact">
+          <Contact />
+        </section>
+      </div>
+    </ParallaxProvider>
   );
 }
 

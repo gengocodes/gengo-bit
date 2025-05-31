@@ -3,14 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .ss-slideshow {
+  margin-left: -5vw;
+  width: 110vw;
   min-height: 200px;
+  margin-top: -5vh;
   display: grid;
   place-items: center;
   background-color: #222229;
   background-color: #222229;
   background-color: #222229;
+  padding-bottom: 1vh;
+  padding-top: 3vh;
+  rotate: -4deg;
 }
 .ss-slideshow2 {
   min-height: 200px;
@@ -18,8 +23,29 @@
   place-items: center;
   background-color: #222229;
   margin-top: -10px;
-
+  rotate: -4deg;
+  margin-left: -5vw;
+  width: 110vw;
   z-index: 1000;
+  margin-bottom: -5vh;
+  padding-bottom: 3vh;
+  box-shadow:
+    0px 1px 0px 0px rgba(0, 0, 0, 0.22),
+    1px 0px 0px 0px rgba(0, 0, 0, 0.22),
+    1px 2px 0px 0px rgba(0, 0, 0, 0.22),
+    2px 1px 0px 0px rgba(0, 0, 0, 0.22),
+    2px 3px 0px 0px rgba(0, 0, 0, 0.22),
+    3px 2px 0px 0px rgba(0, 0, 0, 0.22),
+    3px 4px 0px 0px rgba(0, 0, 0, 0.22),
+    4px 3px 0px 0px rgba(0, 0, 0, 0.22),
+    4px 5px 0px 0px rgba(0, 0, 0, 0.22),
+    5px 4px 0px 0px rgba(0, 0, 0, 0.22),
+    5px 6px 0px 0px rgba(0, 0, 0, 0.22),
+    6px 5px 0px 0px rgba(0, 0, 0, 0.22),
+    6px 7px 0px 0px rgba(0, 0, 0, 0.22),
+    7px 6px 0px 0px rgba(0, 0, 0, 0.22),
+    7px 8px 0px 0px rgba(0, 0, 0, 0.22),
+    8px 7px 0px 0px rgba(0, 0, 0, 0.22);
 }
 .ss-slider {
   height: 250px;

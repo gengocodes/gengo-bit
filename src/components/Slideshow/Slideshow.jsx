@@ -13,6 +13,7 @@ import image1_8 from "./images/image 1.8.png";
 function Slideshow() {
   return (
     <div className="ss-slideshow">
+
       <div className="ss-slider">
         <div className="ss-slide-track">
           {/* 9 ss-slides */}

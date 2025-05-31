@@ -3,31 +3,87 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrollbars */
-  background-color: #eaefef; /* Fallback background */
-  font-family: "Poppins", sans-serif; /* Default font for body */
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
-
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-behavior: smooth;
 }
-
-section {
-  width: 100%;
+.blue {
+  background-color: #222229;
+  height: 5vh;
+}
+.firstSec {
+  position: fixed;
+  z-index: 0;
+}
+#skills {
+  margin-top: -120px;
   position: relative;
-  flex: 1;
-  min-height: 300px; /* Ensure consistent height */
+  z-index: 8;
+  background-image: url("../assets/mooning-1920x1080.png");
 }
-
-.wave {
-  width: 100%;
-  display: block;
+#slideshow {
+  position: relative;
+  background-color: transparent;
+  z-index: 9;
+}
+#projects {
+  position: relative;
+  z-index: 10;
+}
+.ghost {
+  background-image: url("../assets/mooning-1920x1080.png");
+  height: 95vh;
+  z-index: 0;
+}
+.ghost2 {
+  background-image: url("../assets/mooning-1920x1080.png");
+  height: 130px;
+}
+.shape {
+  height: 20vh;
+  width: 100vw;
+}
+.shapedividers_com-2731 {
+  overflow: hidden;
+  position: relative;
+}
+.shapedividers_com-2731::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
   position: absolute;
-  bottom: 0;
-  transition: transform 0.3s ease-out;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 200% 130px;
+  background-position: 100% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 476.62 100.69"><path fill="%23222229" d="M476.62 100.69V0l-238.3 95.47L0 0v100.69Z"/></svg>');
 }
 
-/* Styling the wave for smoother transitions */
-.wave path {
-  transition: all 0.3s ease-out;
+@media (min-width: 768px) {
+  .shapedividers_com-2731::before {
+    background-size: 200% 130px;
+    background-position: 100% 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .shapedividers_com-2731::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 200% 130px;
+    background-position: 100% 100%;
+  }
+}
+@media (min-width: 2100px) {
+  .shapedividers_com-2731::before {
+    background-size: 200% calc(2vw + 130px);
+  }
 }
