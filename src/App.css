@@ -16,7 +16,6 @@ html {
 #home {
   position: relative;
   z-index: 0;
-  margin-bottom: 95vh;
 }
 
 #skills {
@@ -26,10 +25,10 @@ html {
   background-image: url("./assets/mooning-1920x1080.png");
 }
 #slideshow {
+  margin-top: 100vh;
   position: relative;
   background-color: transparent;
   z-index: 9;
-  margin-top: -5vw;
 }
 #projects {
   position: relative;
@@ -51,10 +50,8 @@ html {
 }
 
 @media (max-width: 600px) {
-  #home {
-    margin-bottom: 130vh;
-  }
   #slideshow {
-    width: 110vw;
+    width: 100vw;
+    margin-top: 130vh;
   }
 }
