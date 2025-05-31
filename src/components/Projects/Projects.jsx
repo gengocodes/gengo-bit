@@ -19,7 +19,7 @@ function Projects() {
             ref={ref1}
             className={`projects-title ${
               isVisible1
-                ? "animate__animated animate__slideInLeft"
+                ? "animate__animated animate__fadeInLeft"
                 : "hidden-on-load"
             }`}
           >
@@ -31,7 +31,7 @@ function Projects() {
         ref={ref2}
         className={`projects-div2 ${
           isVisible2
-            ? "animate__animated animate__slideInRight"
+            ? "animate__animated animate__fadeInRight"
             : "hidden-on-load"
         }`}
       >

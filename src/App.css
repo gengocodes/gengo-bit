@@ -9,15 +9,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
-.blue {
-  background-color: #222229;
-  height: 5vh;
+
+#home {
+  position: relative;
+  z-index: 5;
 }
 
-.firstSec {
-  position: relative;
-  z-index: 0;
-}
 #skills {
   margin-top: -120px;
   position: relative;
@@ -28,6 +25,7 @@ html {
   position: relative;
   background-color: transparent;
   z-index: 9;
+  margin-top: -120px;
 }
 #projects {
   position: relative;
@@ -46,49 +44,8 @@ html {
   background-image: url("./assets/mooning-1920x1080.png");
   height: 130px;
 }
-.shape {
-  height: 20vh;
-  width: 100vw;
-}
-.shapedividers_com-2731 {
-  overflow: hidden;
-  position: relative;
-}
-.shapedividers_com-2731::before {
-  content: "";
-  font-family: "shape divider from ShapeDividers.com";
-  position: absolute;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  top: -1px;
-  z-index: 3;
-  pointer-events: none;
-  background-repeat: no-repeat;
-  background-size: 200% 130px;
-  background-position: 100% 100%;
-  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 476.62 100.69"><path fill="%23222229" d="M476.62 100.69V0l-238.3 95.47L0 0v100.69Z"/></svg>');
-}
-
-@media (min-width: 768px) {
-  .shapedividers_com-2731::before {
-    background-size: 200% 130px;
-    background-position: 100% 100%;
-  }
-}
-
-@media (min-width: 1025px) {
-  .shapedividers_com-2731::before {
-    bottom: -0.1vw;
-    left: -0.1vw;
-    right: -0.1vw;
-    top: -0.1vw;
-    background-size: 200% 130px;
-    background-position: 100% 100%;
-  }
-}
-@media (min-width: 2100px) {
-  .shapedividers_com-2731::before {
-    background-size: 200% calc(2vw + 130px);
+@media (max-width: 600px) {
+  #slideshow {
+    margin-top: -50px;
   }
 }

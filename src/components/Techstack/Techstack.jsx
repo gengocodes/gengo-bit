@@ -44,7 +44,7 @@ function Techstack() {
             ref={ref1}
             className={`tech-stack-title ${
               isVisible1
-                ? "animate__animated animate__slideInLeft"
+                ? "animate__animated animate__fadeInLeft"
                 : "hidden-on-load"
             }`}
           >
@@ -54,7 +54,7 @@ function Techstack() {
             ref={ref2}
             className={`logos-cont ${
               isVisible2
-                ? "animate__animated animate__fadeInBottomRight"
+                ? "animate__animated animate__fadeInRight"
                 : "hidden-on-load"
             }`}
           >
@@ -112,7 +112,7 @@ function Techstack() {
             ref={ref3}
             className={`logos-cont ${
               isVisible3
-                ? "animate__animated animate__fadeInBottomRight"
+                ? "animate__animated animate__fadeInRight"
                 : "hidden-on-load"
             }`}
           >
@@ -137,7 +137,7 @@ function Techstack() {
             ref={ref5}
             className={`logos-cont ${
               isVisible5
-                ? "animate__animated animate__fadeInBottomRight"
+                ? "animate__animated animate__fadeInRight"
                 : "hidden-on-load"
             }`}
           >
@@ -172,7 +172,7 @@ function Techstack() {
             ref={ref6}
             className={`tech-stack-title ${
               isVisible6
-                ? "animate__animated animate__slideInLeft"
+                ? "animate__animated animate__fadeInLeft"
                 : "hidden-on-load"
             }`}
           >
@@ -182,7 +182,7 @@ function Techstack() {
             ref={ref7}
             className={`logos-cont ${
               isVisible7
-                ? "animate__animated animate__fadeInBottomRight"
+                ? "animate__animated animate__fadeInRight"
                 : "hidden-on-load"
             }`}
           >
@@ -223,7 +223,7 @@ function Techstack() {
               ref={ref8}
               className={`logos-cont ${
                 isVisible8
-                  ? "animate__animated animate__fadeInBottomRight"
+                  ? "animate__animated animate__fadeInRight"
                   : "hidden-on-load"
               }`}
             >
