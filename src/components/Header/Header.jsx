@@ -20,10 +20,7 @@ function Header({
       <a href="#projects" onClick={() => handleScrollTo(projectsSectionRef)}>
         PROJECTS
       </a>
-      <a
-        href="#experience"
-        onClick={() => handleScrollTo(experienceSectionRef)}
-      >
+      <a href="#timeline" onClick={() => handleScrollTo(experienceSectionRef)}>
         EXPERIENCE
       </a>
       <a href="#contact" onClick={() => handleScrollTo(contactSectionRef)}>
