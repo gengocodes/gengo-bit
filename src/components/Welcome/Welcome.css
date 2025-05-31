@@ -115,13 +115,13 @@
   animation: textShine 5s ease-in-out infinite alternate;
 }
 .welcome-greetings {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 .welcome-desc1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
-  line-height: 6.5rem;
+  line-height: 5.5rem;
 }
 .welcome-name:hover {
   color: white;
@@ -142,7 +142,7 @@
 }
 .welcome-catch {
   line-height: 50px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .paul_pic {
