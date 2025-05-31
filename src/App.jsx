@@ -22,34 +22,35 @@ function App() {
     <ParallaxProvider>
       <div className="App">
         <Arrow />
-
-        <section ref={homeSectionRef} id="home" className="firstSec">
-          <Parallax speed={-30}>
+        <Parallax speed={-10}>
+          <section ref={homeSectionRef} id="home" className="firstSec">
             <Welcome />
-            <div className="blue"></div>
-          </Parallax>
-        </section>
+          </section>
+        </Parallax>
 
-        <section className="ghost"></section>
-        <section id="slideshow">
-          <Slideshow />
-          <Slideshow2 />
-        </section>
-        <section className="ghost2"></section>
+        <Parallax speed={23} translateY={[0, -50]}>
+          <section id="slideshow">
+            <Slideshow />
+            <Slideshow2 />
+          </section>
+          <section className="ghost2"></section>
 
-        <section ref={skillsSectionRef} id="skills">
-          <Techstack />
-        </section>
-        <section ref={projectsSectionRef} id="projects">
-          <Projects />
-        </section>
-        <section ref={experienceSectionRef} id="timeline">
-          <Timeline />
-        </section>
+          <section ref={skillsSectionRef} id="skills">
+            <Techstack />
+          </section>
 
-        <section ref={contactSectionRef} id="contact">
-          <Contact />
-        </section>
+          <section ref={projectsSectionRef} id="projects">
+            <Projects />
+          </section>
+
+          <section ref={experienceSectionRef} id="timeline">
+            <Timeline />
+          </section>
+          <Parallax speed={1} translateY={[0, 0]}></Parallax>
+          <section ref={contactSectionRef} id="contact">
+            <Contact />
+          </section>
+        </Parallax>
       </div>
     </ParallaxProvider>
   );

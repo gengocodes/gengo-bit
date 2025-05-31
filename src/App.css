@@ -13,8 +13,9 @@ html {
   background-color: #222229;
   height: 5vh;
 }
+
 .firstSec {
-  position: fixed;
+  position: relative;
   z-index: 0;
 }
 #skills {
