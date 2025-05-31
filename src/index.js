@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./styles/App.css";
+import "./App.css";
 
 const applyParallaxEffect = () => {
   const parallaxSections = document.querySelectorAll(".parallax-section");

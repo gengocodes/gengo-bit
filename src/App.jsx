@@ -7,7 +7,7 @@ import Techstack from "./components/Techstack/Techstack";
 import Slideshow from "./components/Slideshow/Slideshow";
 import Slideshow2 from "./components/Slideshow/Slideshow2";
 import Timeline from "./components/Timeline/Timeline";
-import "./styles/App.css";
+import "./App.css";
 import "animate.css";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
