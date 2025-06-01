@@ -12,7 +12,10 @@ html {
 .App {
   background-image: url("./assets/mooning-1920x1080.png");
 }
-
+#cursor {
+  z-index: 99999;
+  position: absolute;
+}
 #home {
   position: relative;
   z-index: 0;

@@ -3,7 +3,6 @@ import "./Welcome.css";
 import paul_pic2 from "../../assets/paul_mob_pic.png";
 import paul_pic from "../../assets/paul-huge-pic.png";
 
-import Cursor from "./Cursor/Cursor";
 import Header from "../Header/Header";
 
 function Welcome() {
@@ -80,7 +79,7 @@ function Welcome() {
           projectsSectionRef={projectsSectionRef}
           contactSectionRef={contactSectionRef}
         />
-        <Cursor />
+
         <img
           src={isMobile ? paul_pic : paul_pic2}
           className="paul_pic"
