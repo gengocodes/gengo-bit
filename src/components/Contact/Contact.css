@@ -30,7 +30,7 @@
 }
 .marquee {
   background-color: #18181d;
-  position: absolute;
+  position: relative;
   border-top: 1px solid black;
   color: #b5c9f0;
 }
