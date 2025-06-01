@@ -34,7 +34,7 @@ function Contact() {
         <InstagramIcon fontSize="large" className="logo" onClick={Instagram} />
       </div>
       <div className="contact-cont3">
-        <Marquee className="marquee" speed={15} loop={0}>
+        <Marquee className="marquee" speed={15}>
           <p className="marqueeP">CONTACT ME</p>
           &#x2022;
           <p className="marqueeP">paulcorsino.work@gmail.com</p>
