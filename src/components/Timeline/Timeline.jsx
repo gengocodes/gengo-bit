@@ -10,71 +10,60 @@ import PendingIcon from "@mui/icons-material/Pending";
 
 function Timeline() {
   return (
-    <div className="main-cont">
-      <div className="shape-cont">
-        <div className="shape1"></div>
-        <div className="shape2"></div>
-      </div>
-
-      <div className="timeline">
-        <VerticalTimeline lineColor="linear-gradient(270deg,rgba(0, 0, 0, 1) 0%, rgba(51, 52, 70, 1) 50%, rgba(0, 0, 0, 1) 100%)">
-          <VerticalTimelineElement
-            contentStyle={{ background: "#333446", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #333446" }}
-            date="2019 - 2021"
-            iconStyle={{ background: "#333446", color: "#fff" }}
-            icon={<SchoolIcon />}
-            shadowSize="large"
-          >
-            <h3 className="vertical-timeline-element-title">
-              University of Cebu - Lapu-Lapu and Mandaue
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor of Technology - BTECH, Information Technology
-            </h4>
-            <p>Student</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            contentStyle={{ background: "#333446", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #333446" }}
-            date="2019 - 2021"
-            iconStyle={{ background: "#333446", color: "#fff" }}
-            icon={<SchoolIcon />}
-            shadowSize="large"
-          >
-            <h3 className="vertical-timeline-element-title">
-              University of San Carlos
-            </h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Bachelor of Science in Computer Engineering
-            </h4>
-            <p>Student</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            contentStyle={{ background: "#333446", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "7px solid  #333446" }}
-            date="03/2025 - 05/2025"
-            iconStyle={{ background: "#333446", color: "#fff" }}
-            icon={<WorkIcon />}
-            shadowSize="large"
-          >
-            <h3 className="vertical-timeline-element-title">Techflow.ai</h3>
-            <h4 className="vertical-timeline-element-subtitle">
-              Darmstadt, Hessen, Germany
-            </h4>
-            <p>Automation Engineer Intern</p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: "#EAEFEF", color: "#333446" }}
-            icon={<PendingIcon />}
-            shadowSize="large"
-          />
-        </VerticalTimeline>
-      </div>
-      <div className="shape-cont2">
-        <div className="shape3"></div>
-        <div className="shape42"></div>
-      </div>
+    <div className="timeline ">
+      <VerticalTimeline lineColor="linear-gradient(270deg,rgba(0, 0, 0, 1) 0%, rgba(51, 52, 70, 1) 50%, rgba(0, 0, 0, 1) 100%)">
+        <VerticalTimelineElement
+          contentStyle={{ background: "#333446", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #333446" }}
+          date="2019 - 2021"
+          iconStyle={{ background: "#333446", color: "#fff" }}
+          icon={<SchoolIcon />}
+          shadowSize="large"
+        >
+          <h3 className="vertical-timeline-element-title">
+            University of Cebu - Lapu-Lapu and Mandaue
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Bachelor of Technology - BTECH, Information Technology
+          </h4>
+          <p>Student</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          contentStyle={{ background: "#333446", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #333446" }}
+          date="2019 - 2021"
+          iconStyle={{ background: "#333446", color: "#fff" }}
+          icon={<SchoolIcon />}
+          shadowSize="large"
+        >
+          <h3 className="vertical-timeline-element-title">
+            University of San Carlos
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Bachelor of Science in Computer Engineering
+          </h4>
+          <p>Student</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          contentStyle={{ background: "#333446", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  #333446" }}
+          date="03/2025 - 05/2025"
+          iconStyle={{ background: "#333446", color: "#fff" }}
+          icon={<WorkIcon />}
+          shadowSize="large"
+        >
+          <h3 className="vertical-timeline-element-title">Techflow.ai</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Darmstadt, Hessen, Germany
+          </h4>
+          <p>Automation Engineer Intern</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          iconStyle={{ background: "#EAEFEF", color: "#333446" }}
+          icon={<PendingIcon />}
+          shadowSize="large"
+        />
+      </VerticalTimeline>
     </div>
   );
 }

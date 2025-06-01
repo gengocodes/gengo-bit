@@ -31,7 +31,6 @@ html {
 #projects {
   position: relative;
   z-index: 10;
-  margin-bottom: -150px;
 }
 #timeline {
   position: relative;

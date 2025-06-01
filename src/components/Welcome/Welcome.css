@@ -147,7 +147,7 @@
   font-weight: 400;
 }
 .paul_pic {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   height: 90vh;
