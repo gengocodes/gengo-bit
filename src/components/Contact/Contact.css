@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 .contact {
   height: 70px;
   width: 100vw;
@@ -5,8 +6,13 @@
   background-color: #1e1e24;
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 .contact-cont1 {
+  height: 10%;
+  width: 100vw;
+}
+.contact-cont2 {
   height: 100%;
   width: 100vw;
   display: flex;
@@ -15,7 +21,25 @@
   color: white;
   gap: 3vh;
 }
+.contact-cont3 {
+  height: 10%;
+  width: 100vw;
+}
 .logo:hover {
   color: #7f8caa;
   cursor: pointer;
+}
+.marquee {
+  background-color: #18181d;
+  position: absolute;
+  border-top: 1px solid black;
+  color: #adc0e7;
+}
+.marqueeP {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 0;
+
+  padding-bottom: 1px solid black;
+  font-family: "Limelight";
 }
