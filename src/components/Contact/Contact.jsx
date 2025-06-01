@@ -5,7 +5,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import Marquee from "react-fast-marquee";
 
 function Contact() {
   const Instagram = () => {
@@ -33,46 +32,7 @@ function Contact() {
         <LinkedInIcon fontSize="large" className="logo" onClick={LinkedIn} />
         <InstagramIcon fontSize="large" className="logo" onClick={Instagram} />
       </div>
-      <div className="contact-cont3">
-        <Marquee className="marquee">
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP"> paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-          <p className="marqueeP">CONTACT ME</p>
-          &#x2022;
-          <p className="marqueeP">paulcorsino.work@gmail.com</p>
-          &#x2022;
-        </Marquee>
-      </div>
+      <div className="contact-cont3"></div>
     </div>
   );
 }

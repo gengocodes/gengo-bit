@@ -5,13 +5,42 @@ import project2 from "./assets/project2.png";
 import project3 from "./assets/project3.png";
 import project4 from "./assets/project4.png";
 import project5 from "./assets/project5.png";
+import project6 from "./assets/project6.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import NorthWestIcon from "@mui/icons-material/NorthWest";
 
 const Slide = ({ index }) => {
   let slideContent;
-
-  // Hardcoded content based on the slide index
+  const Project1Github = () => {
+    window.open(
+      "https://github.com/gengocodes/Septic-Tank-Monitoring-System",
+      "_blank"
+    );
+  };
+  const Project1Website = () => {
+    window.open("https://septictankmonitoringsystem.netlify.app/", "_blank");
+  };
+  const Project2Github = () => {
+    window.open("https://github.com/gengocodes/GenChat", "_blank");
+  };
+  const Project2Website = () => {
+    window.open("https://ognegchat.netlify.app/", "_blank");
+  };
+  const Project3Github = () => {
+    window.open("https://github.com/gengocodes/GenDo", "_blank");
+  };
+  const Project4Github = () => {
+    window.open(
+      "https://github.com/gengocodes/Image-Classification-of-Fish-Species-Using-the-CIFAR-100-Dataset",
+      "_blank"
+    );
+  };
+  const Project5Github = () => {
+    window.open("https://github.com/gengocodes/Custom-App-in-Make", "_blank");
+  };
+  const Project6Github = () => {
+    window.open("https://github.com/gengocodes/api-excel-generator", "_blank");
+  };
   switch (index) {
     case 0:
       slideContent = (
@@ -44,11 +73,11 @@ const Slide = ({ index }) => {
               </p>
             </div>
             <div className="div2-3">
-              <div className="github-cont first ">
+              <div className="github-cont first " onClick={Project1Github}>
                 <GitHubIcon />
                 <p className="first">View Source Code</p>
               </div>
-              <div className="website-cont first ">
+              <div className="website-cont first " onClick={Project1Website}>
                 <NorthWestIcon />
                 <p className="first">View Website</p>
               </div>
@@ -91,11 +120,11 @@ const Slide = ({ index }) => {
               </p>
             </div>
             <div className="div2-3">
-              <div className="github-cont first ">
+              <div className="github-cont first " onClick={Project2Github}>
                 <GitHubIcon />
                 <p className="first">View Source Code</p>
               </div>
-              <div className="website-cont first">
+              <div className="website-cont first" onClick={Project2Website}>
                 <NorthWestIcon />
                 <p className="first">View Website</p>
               </div>
@@ -138,13 +167,9 @@ const Slide = ({ index }) => {
               </p>
             </div>
             <div className="div2-3">
-              <div className="github-cont first ">
+              <div className="github-cont first " onClick={Project3Github}>
                 <GitHubIcon />
                 <p className="first">View Source Code</p>
-              </div>
-              <div className="website-cont first">
-                <NorthWestIcon />
-                <p className="first">View Website</p>
               </div>
             </div>
           </div>
@@ -180,7 +205,7 @@ const Slide = ({ index }) => {
               </p>
             </div>
             <div className="div2-3">
-              <div className="github-cont first ">
+              <div className="github-cont first " onClick={Project4Github}>
                 <GitHubIcon />
                 <p className="first">View Source Code</p>
               </div>
@@ -189,8 +214,43 @@ const Slide = ({ index }) => {
         </div>
       );
       break;
-
     case 4:
+      slideContent = (
+        <div className="slide-cont">
+          <div className="div1">
+            <div className="shadow-overlay"></div>
+            <div className="shadow-overlay"></div>{" "}
+            <img
+              src={project6}
+              alt={`Slide ${index + 1}`}
+              className="project-img"
+            />
+          </div>
+          <div className="div2">
+            <div className="div2-1">
+              <p className="first python">Python</p>
+              <p className="api">REST API</p>
+              <p className="json">JSON</p>
+            </div>
+            <div className="div2-2">
+              <p>
+                &bull; Developed a Python-based API deployed on Render.com to
+                generate Excel files via API requests, with integration support
+                for platforms like Make (Integromat) to enable automated
+                workflows and file delivery.
+              </p>
+            </div>
+            <div className="div2-3">
+              <div className="github-cont first " onClick={Project6Github}>
+                <GitHubIcon />
+                <p className="first">View Source Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+      break;
+    case 5:
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
@@ -214,7 +274,7 @@ const Slide = ({ index }) => {
               </p>
             </div>
             <div className="div2-3">
-              <div className="github-cont first ">
+              <div className="github-cont first " onClick={Project5Github}>
                 <GitHubIcon />
                 <p className="first">View Source Code</p>
               </div>
