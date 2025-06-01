@@ -30,7 +30,7 @@ function Contact() {
         <FacebookIcon fontSize="large" className="logo" onClick={Facebook} />
         <GitHubIcon fontSize="large" className="logo" onClick={Github} />
         <EmailIcon fontSize="large" className="logo" onClick={Email} />
-        <LinkedInIcon fontSize="large" className="logo" />
+        <LinkedInIcon fontSize="large" className="logo" onClick={LinkedIn} />
         <InstagramIcon fontSize="large" className="logo" onClick={Instagram} />
       </div>
       <div className="contact-cont3">
