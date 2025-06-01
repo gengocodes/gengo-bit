@@ -55,6 +55,22 @@ function Contact() {
           &#x2022;
           <p className="marqueeP">paulcorsino.work@gmail.com</p>
           &#x2022;
+          <p className="marqueeP">CONTACT ME</p>
+          &#x2022;
+          <p className="marqueeP">paulcorsino.work@gmail.com</p>
+          &#x2022;
+          <p className="marqueeP">CONTACT ME</p>
+          &#x2022;
+          <p className="marqueeP">paulcorsino.work@gmail.com</p>
+          &#x2022;
+          <p className="marqueeP">CONTACT ME</p>
+          &#x2022;
+          <p className="marqueeP">paulcorsino.work@gmail.com</p>
+          &#x2022;
+          <p className="marqueeP">CONTACT ME</p>
+          &#x2022;
+          <p className="marqueeP">paulcorsino.work@gmail.com</p>
+          &#x2022;
         </Marquee>
       </div>
     </div>
