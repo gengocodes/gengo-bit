@@ -110,13 +110,14 @@ const Slide = ({ index }) => {
             </div>
             <div className="div2-2">
               <p>
-                &bull; This project is being developed using ReactJS for the
-                frontend, Node.js for the backend, and Firebase as the database.
-                It leverages Firebase Authentication to enable user logins and
-                provides features such as real-time public chat, thread posting,
-                and local weather checking. Additionally, it integrates multiple
-                APIs to enhance user experience and is built using TypeScript
-                for improved maintainability and scalability.
+                &bull; Developed a full-stack web application using ReactJS and
+                TypeScript for the frontend, Node.js for the backend, and
+                Firebase for authentication and data storage. The application
+                features secure user login via Firebase Authentication, a
+                real-time public chat system, and customizable user profiles.
+                The homepage integrates multiple APIs—including a weather API
+                that displays local weather based on the user's location—to
+                enhance user engagement.
               </p>
             </div>
             <div className="div2-3">
@@ -157,13 +158,15 @@ const Slide = ({ index }) => {
             </div>
             <div className="div2-2">
               <p>
-                &bull; This project is being developed using ReactJS for the
-                frontend, Node.js for the backend, and MongoDB as the database.
-                It includes an authentication system to enable user logins. The
-                application allows users to create a to-do list, set priority
-                levels, update task statuses, and mark tasks as complete.
-                Additionally, it features a user-friendly interface, real-time
-                updates, and intuitive task management to enhance productivity.
+                &bull; Developed a full-stack task management web application
+                using ReactJS and TypeScript for the frontend, Node.js and
+                TypeScript for the backend, and MongoDB as the database.
+                Implemented a secure authentication system to enable user
+                logins. The application allows users to create to-do lists,
+                assign priority levels, update task statuses, and mark tasks as
+                complete. It features a user-friendly interface with real-time
+                updates and intuitive task management tools designed to enhance
+                productivity.
               </p>
             </div>
             <div className="div2-3">
