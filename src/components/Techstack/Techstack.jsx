@@ -8,9 +8,9 @@ import typescript from "./logos/typescript-icon.svg";
 import php from "./logos/php.svg";
 import react from "./logos/react.svg";
 import tailwind from "./logos/tailwindcss-icon.svg";
-import nextjs from "./logos/nextjs-icon.svg";
 
 import nodejs from "./logos/nodejs-icon-alt.svg";
+import expressjs from "./logos/expressjs.svg";
 import python from "./logos/python.svg";
 
 import firebase from "./logos/firebase.svg";
@@ -103,9 +103,6 @@ function Techstack() {
               >
                 <img src={tailwind} className="tech-logo" alt="" />
               </a>
-              <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-                <img src={nextjs} className="tech-logo" alt="" />
-              </a>
             </div>
           </div>
           <div
@@ -121,15 +118,15 @@ function Techstack() {
               <a href="https://nodejs.org/en" target="_blank" rel="noreferrer">
                 <img src={nodejs} className="tech-logo" alt="" />
               </a>
+              <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+                <img src={expressjs} className="tech-logo" alt="" />
+              </a>
               <a
                 href="https://www.python.org/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src={python} className="tech-logo" alt="" />
-              </a>
-              <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-                <img src={nextjs} className="tech-logo" alt="" />
               </a>
             </div>
           </div>
