@@ -8,6 +8,7 @@ body {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .App {
   background-image: url("./assets/mooning-1920x1080.png");
