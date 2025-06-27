@@ -8,6 +8,7 @@ import typescript from "./logos/typescript-icon.svg";
 import php from "./logos/php.svg";
 import react from "./logos/react.svg";
 import tailwind from "./logos/tailwindcss-icon.svg";
+import bootstrap from "./logos/bootstrap.svg";
 
 import nodejs from "./logos/nodejs-icon-alt.svg";
 import expressjs from "./logos/expressjs.svg";
@@ -38,8 +39,7 @@ function Techstack() {
   return (
     <div className="techstack-main">
       <div className="tech-cont">
-        <div className="tech-header"></div>
-        <div className="tech-body">
+        <section className="tech-body">
           <div
             ref={ref1}
             className={`tech-stack-title ${
@@ -65,35 +65,40 @@ function Techstack() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={html} className="tech-logo" alt="" />
+                <img src={html} className="tech-logo" alt="html logo" />
               </a>
               <a
                 href="https://www.w3schools.com/css/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={css} className="tech-logo" alt="" />
+                <img src={css} className="tech-logo" alt="css logo" />
               </a>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={javascript} className="tech-logo" alt="" />
+                <img
+                  src={javascript}
+                  className="tech-logo"
+                  alt="javascript logo"
+                />
               </a>
               <a
                 href="https://www.typescriptlang.org/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={typescript} className="tech-logo" alt="" />
+                <img
+                  src={typescript}
+                  className="tech-logo"
+                  alt="typescript logo"
+                />
               </a>
 
-              <a href="https://www.php.net/" target="_blank" rel="noreferrer">
-                <img src={php} className="tech-logo" alt="" />
-              </a>
               <a href="https://react.dev/" target="_blank" rel="noreferrer">
-                <img src={react} className="tech-logo" alt="" />
+                <img src={react} className="tech-logo" alt="reactjs logo" />
               </a>
 
               <a
@@ -101,7 +106,22 @@ function Techstack() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={tailwind} className="tech-logo" alt="" />
+                <img
+                  src={tailwind}
+                  className="tech-logo"
+                  alt="tailwindcss logo"
+                />
+              </a>
+              <a
+                href="https://getbootstrap.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src={bootstrap}
+                  className="tech-logo"
+                  alt="bootstrap logo"
+                />
               </a>
             </div>
           </div>
@@ -116,17 +136,24 @@ function Techstack() {
             <span className="txt-labels">Backend</span>
             <div className="tech-logos">
               <a href="https://nodejs.org/en" target="_blank" rel="noreferrer">
-                <img src={nodejs} className="tech-logo" alt="" />
+                <img src={nodejs} className="tech-logo" alt="nodejs logo" />
               </a>
               <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
-                <img src={expressjs} className="tech-logo" alt="" />
+                <img
+                  src={expressjs}
+                  className="tech-logo"
+                  alt="expressjs logo"
+                />
+              </a>
+              <a href="https://www.php.net/" target="_blank" rel="noreferrer">
+                <img src={php} className="tech-logo" alt="php logo" />
               </a>
               <a
                 href="https://www.python.org/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={python} className="tech-logo" alt="" />
+                <img src={python} className="tech-logo" alt="python logo" />
               </a>
             </div>
           </div>
@@ -147,21 +174,21 @@ function Techstack() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={firebase} className="tech-logo" alt="" />
+                <img src={firebase} className="tech-logo" alt="firebase logo" />
               </a>
               <a
                 href="https://www.mongodb.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={mongodb} className="tech-logo" alt="" />
+                <img src={mongodb} className="tech-logo" alt="mongodb logo" />
               </a>
               <a
                 href="https://www.w3schools.com/sql/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={mysql} className="tech-logo" alt="" />
+                <img src={mysql} className="tech-logo" alt="mysql logo" />
               </a>
             </div>
           </div>
@@ -192,7 +219,7 @@ function Techstack() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={java} className="tech-logo" alt="" />
+                <img src={java} className="tech-logo" alt="java logo" />
               </a>
               <a
                 href="https://www.w3schools.com/c/c_intro.php"
@@ -206,14 +233,14 @@ function Techstack() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={cplusplus} className="tech-logo" alt="" />
+                <img src={cplusplus} className="tech-logo" alt="c++ logo" />
               </a>
               <a
                 href="https://www.python.org/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={python} className="tech-logo" alt="" />
+                <img src={python} className="tech-logo" alt="python logo" />
               </a>
             </div>
             <div
@@ -232,26 +259,34 @@ function Techstack() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={figma} className="tech-logo" alt="" />
+                  <img src={figma} className="tech-logo" alt="figma logo" />
                 </a>
                 <a
                   href="https://www.adobe.com/products/photoshop/landpa.html?sdid=NC5FRF5H&mv=search&mv2=paidsearch&ef_id=CjwKCAjw6NrBBhB6EiwAvnT_roMvQd3I2RL5CFqpjS_SWdaoQ0frxyFt5tYUFMGVg7YJjoPTbVS31xoCLw4QAvD_BwE:G:s&s_kwcid=AL!3085!3!714745362176!e!!g!!photoshop!1712238394!67643541820&mv=search&gad_source=1&gad_campaignid=1712238394&gbraid=0AAAAAD5r4AwdJ4j-m4UuleTqtvVBJzWcm&gclid=CjwKCAjw6NrBBhB6EiwAvnT_roMvQd3I2RL5CFqpjS_SWdaoQ0frxyFt5tYUFMGVg7YJjoPTbVS31xoCLw4QAvD_BwE"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={photoshop} className="tech-logo" alt="" />
+                  <img
+                    src={photoshop}
+                    className="tech-logo"
+                    alt="photoshop logo"
+                  />
                 </a>
                 <a
                   href="https://wordpress.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={wordpress} className="tech-logo" alt="" />
+                  <img
+                    src={wordpress}
+                    className="tech-logo"
+                    alt="wordpress logo"
+                  />
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
