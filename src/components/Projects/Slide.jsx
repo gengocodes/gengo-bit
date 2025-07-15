@@ -1,5 +1,6 @@
 import React from "react";
 import "./Slide.css";
+import project0 from "./assets/project0.png";
 import project1 from "./assets/project1.png";
 import project2 from "./assets/project2.png";
 import project3 from "./assets/project3.png";
@@ -16,6 +17,9 @@ const Slide = ({ index }) => {
       "https://github.com/gengocodes/Septic-Tank-Monitoring-System",
       "_blank"
     );
+  };
+  const Project0Website = () => {
+    window.open("https://gendo-woad.vercel.app/", "_blank");
   };
   const Project1Website = () => {
     window.open("https://septictankmonitoringsystem.netlify.app/", "_blank");
@@ -43,6 +47,52 @@ const Slide = ({ index }) => {
   };
   switch (index) {
     case 0:
+      slideContent = (
+        <div className="slide-cont">
+          <div className="div1">
+            <div className="shadow-overlay"></div>
+            <div className="shadow-overlay"></div>
+            <img
+              src={project0}
+              alt={`Slide ${index + 1}`}
+              className="project-img"
+            />
+          </div>
+          <div className="div2">
+            <div className="div2-1">
+              <p className="first nextjs">Next.js</p>
+              <p className="typescript">CSS</p>
+              <p className="typescript">TypeScript</p>
+              <p className="mongodb">MongoDB</p>
+            </div>
+            <div className="div2-2">
+              <p>
+                &bull; Rebuilt a full-stack task management application using
+                Next.js and MongoDB. Utilized Next.js with TypeScript for a
+                performant, SEO-friendly frontend and API routes for backend
+                logic. Integrated MongoDB for data persistence and implemented
+                secure user authentication with session handling. Enabled users
+                to create to-do lists, set priorities, update task statuses, and
+                mark tasks as complete. Enhanced user experience with real-time
+                UI updates, clean design, and responsive layout to optimize
+                productivity across devices.
+              </p>
+            </div>
+            <div className="div2-3">
+              <div className="github-cont first " onClick={Project1Github}>
+                <GitHubIcon />
+                <p className="first">View Source Code</p>
+              </div>
+              <div className="website-cont first " onClick={Project0Website}>
+                <NorthWestIcon />
+                <p className="first">View Website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+      break;
+    case 1:
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
@@ -87,7 +137,7 @@ const Slide = ({ index }) => {
       );
       break;
 
-    case 1:
+    case 2:
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
@@ -135,7 +185,7 @@ const Slide = ({ index }) => {
       );
       break;
 
-    case 2:
+    case 3:
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
@@ -179,7 +229,7 @@ const Slide = ({ index }) => {
         </div>
       );
       break;
-    case 3:
+    case 4:
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
@@ -217,7 +267,7 @@ const Slide = ({ index }) => {
         </div>
       );
       break;
-    case 4:
+    case 5:
       slideContent = (
         <div className="slide-cont">
           <div className="div1">
@@ -253,7 +303,7 @@ const Slide = ({ index }) => {
         </div>
       );
       break;
-    case 5:
+    case 6:
       slideContent = (
         <div className="slide-cont">
           <div className="div1">

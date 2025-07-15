@@ -7,6 +7,7 @@ import javascript from "./logos/javascript.svg";
 import typescript from "./logos/typescript-icon.svg";
 import php from "./logos/php.svg";
 import react from "./logos/react.svg";
+import nextjs from "./logos/nextjs-icon.svg";
 import tailwind from "./logos/tailwindcss-icon.svg";
 import bootstrap from "./logos/bootstrap.svg";
 
@@ -100,6 +101,9 @@ function Techstack() {
               <a href="https://react.dev/" target="_blank" rel="noreferrer">
                 <img src={react} className="tech-logo" alt="reactjs logo" />
               </a>
+              <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+                <img src={nextjs} className="tech-logo" alt="nextjs logo" />
+              </a>
 
               <a
                 href="https://tailwindcss.com/"
@@ -144,6 +148,9 @@ function Techstack() {
                   className="tech-logo"
                   alt="expressjs logo"
                 />
+              </a>
+              <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+                <img src={nextjs} className="tech-logo" alt="nextjs logo" />
               </a>
               <a href="https://www.php.net/" target="_blank" rel="noreferrer">
                 <img src={php} className="tech-logo" alt="php logo" />

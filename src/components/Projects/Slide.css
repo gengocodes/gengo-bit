@@ -182,6 +182,10 @@
   background-color: #ffd43b;
   border-color: #306998;
 }
+.nextjs:hover {
+  background-color: #181818;
+  color: white;
+}
 @media (max-width: 600px) {
   .slide-cont {
     height: 450px;
