@@ -24,14 +24,14 @@ function Timeline() {
             University of Cebu - Lapu-Lapu and Mandaue
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Bachelor of Technology - BTECH, Information Technology
+            Information and Communications Technology (ICT) Strand
           </h4>
           <p>Student</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           contentStyle={{ background: "#333446", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  #333446" }}
-          date="2019 - 2021"
+          date="2021 - 2025"
           iconStyle={{ background: "#333446", color: "#fff" }}
           icon={<SchoolIcon />}
           shadowSize="large"
