@@ -7,6 +7,10 @@
   flex-direction: column;
   overflow: hidden;
 }
+.modal {
+  position: sticky;
+  z-index: 99;
+}
 .project-img {
   height: 100%;
   width: 100%;

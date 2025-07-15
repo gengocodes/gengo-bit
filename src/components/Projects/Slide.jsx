@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Slide.css";
 import project0 from "./assets/project0.png";
 import project1 from "./assets/project1.png";
@@ -10,7 +10,7 @@ import project6 from "./assets/project6.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import NorthWestIcon from "@mui/icons-material/NorthWest";
 
-const Slide = ({ index }) => {
+const Slide = ({ index, onViewUIUX }) => {
   let slideContent;
   const Project1Github = () => {
     window.open(
@@ -87,6 +87,13 @@ const Slide = ({ index }) => {
                 <NorthWestIcon />
                 <p className="first">View Website</p>
               </div>
+              <div
+                className="website-cont first "
+                onClick={() => onViewUIUX(index)}
+              >
+                <NorthWestIcon />
+                <p className="first">View UI/UX</p>
+              </div>
             </div>
           </div>
         </div>
@@ -130,6 +137,13 @@ const Slide = ({ index }) => {
               <div className="website-cont first " onClick={Project1Website}>
                 <NorthWestIcon />
                 <p className="first">View Website</p>
+              </div>
+              <div
+                className="website-cont first "
+                onClick={() => onViewUIUX(index)}
+              >
+                <NorthWestIcon />
+                <p className="first">View UI/UX</p>
               </div>
             </div>
           </div>
@@ -179,6 +193,13 @@ const Slide = ({ index }) => {
                 <NorthWestIcon />
                 <p className="first">View Website</p>
               </div>
+              <div
+                className="website-cont first "
+                onClick={() => onViewUIUX(index)}
+              >
+                <NorthWestIcon />
+                <p className="first">View UI/UX</p>
+              </div>
             </div>
           </div>
         </div>
@@ -223,6 +244,13 @@ const Slide = ({ index }) => {
               <div className="github-cont first " onClick={Project3Github}>
                 <GitHubIcon />
                 <p className="first">View Source Code</p>
+              </div>
+              <div
+                className="website-cont first "
+                onClick={() => onViewUIUX(index)}
+              >
+                <NorthWestIcon />
+                <p className="first">View UI/UX</p>
               </div>
             </div>
           </div>

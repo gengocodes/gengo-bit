@@ -5,7 +5,7 @@ import { Thumb } from "./EmblaCarouselThumbsButton";
 import Slide from "./Slide"; // Import the Slide component
 
 const EmblaCarousel = (props) => {
-  const { slides, options } = props;
+  const { slides, options, onViewUIUX } = props;
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(options);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
@@ -39,7 +39,7 @@ const EmblaCarousel = (props) => {
       <div className="embla__viewport" ref={emblaMainRef}>
         <div className="embla__container">
           {slides.map((slide, index) => (
-            <Slide key={index} slide={slide} index={index} /> // Render the Slide component
+            <Slide key={index} slide={slide} index={index} onViewUIUX={onViewUIUX} />
           ))}
         </div>
       </div>
