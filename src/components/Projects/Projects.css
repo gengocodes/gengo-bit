@@ -105,11 +105,13 @@
   min-width: 32px;
   min-height: 32px;
   z-index: 3;
-  transition: color 0.2s, transform 0.2s;
+  transition:
+    color 0.2s,
+    transform 0.2s;
 }
 .carousel-close-btn:hover,
 .carousel-close-btn:focus {
-  color: rgb(0,204,255);
+  color: rgb(0, 204, 255);
   transform: scale(1.13);
   background: none;
 }

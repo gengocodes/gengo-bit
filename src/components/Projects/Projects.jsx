@@ -134,6 +134,15 @@ function Projects() {
       i === projectImages[modalProjectIdx].length - 1 ? 0 : i + 1
     );
 
+  React.useEffect(() => {
+    if (!modalOpen) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") closeModal();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [modalOpen]);
+
   return (
     <div
       className="projects-main animate__animated animate__slideInUp shapedividers_com-8373"
@@ -170,14 +179,15 @@ function Projects() {
       {modalOpen && (
         <div style={modalStyles}>
           <div style={carouselStyles}>
-            <IconButton
-              className="carousel-close-btn"
-              onClick={closeModal}
-              aria-label="Close"
-            >
-              <CloseIcon fontSize="medium" className="carousel-close-icon" />
-            </IconButton>
             <div style={imgContainerStyles}>
+              <IconButton
+                className="carousel-close-btn"
+                onClick={closeModal}
+                aria-label="Close"
+                style={{ position: "absolute", top: 0, right: "1%", zIndex: 10000 }}
+              >
+                <CloseIcon fontSize="medium" className="carousel-close-icon" />
+              </IconButton>
               <IconButton
                 onClick={prevImg}
                 sx={{
